@@ -1,0 +1,15 @@
+[submodule "pytch-tutorials"]
+	path = pytch-tutorials
+	url = ../pytch-tutorials
+[submodule "pytch-vm"]
+	path = pytch-vm
+	url = ../pytch-vm
+[submodule "pytch-build"]
+	path = pytch-build
+	url = ../pytch-build
+[submodule "pytch-webapp"]
+	path = pytch-webapp
+	url = ../pytch-webapp
+[submodule "pytch-website"]
+	path = pytch-website
+	url = ../pytch-website
