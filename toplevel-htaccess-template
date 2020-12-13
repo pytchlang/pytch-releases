@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteBase /
+RewriteRule ^$ app/ [R,L]
+RewriteRule ^(app|doc|tutorials|skulpt)/(.*)$ releases/VERSION-STRING/$1/$2 [L]
