@@ -5,6 +5,11 @@ This page outlines what's changed as we've released new versions of
 Pytch.
 
 
+v0.0.6 (2021-MM-DD)
+-------------------
+
+
+
 v0.0.5 (2021-01-12)
 -------------------
 
