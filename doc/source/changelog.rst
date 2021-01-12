@@ -5,6 +5,14 @@ This page outlines what's changed as we've released new versions of
 Pytch.
 
 
+v0.0.5 (2021-01-12)
+-------------------
+
+* Allow user to vertically drag the horizontal separator between (code
+  and stage) and info-pane.  If user's screen is vertically short,
+  this lets them see more of the tutorial.
+
+
 v0.0.4 (2021-01-08)
 -------------------
 
