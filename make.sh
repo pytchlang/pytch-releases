@@ -23,6 +23,8 @@ else
     export DEPLOY_BASE_URL=/
 fi
 
+export PYTCH_DEPLOYMENT_ID=$(git rev-parse HEAD | cut -c -20)
+
 >&2 echo Making "$zipfile_name"
 
 LOGDIR="$(realpath build-logs/$(date +%Y%m%dT%H%M%S))"
