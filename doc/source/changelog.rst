@@ -8,6 +8,8 @@ Pytch.
 v0.0.6 (2021-MM-DD)
 -------------------
 
+* (Internal build system improvements.)
+* Add new costume/backdrop methods/properties to auto-completion list.
 
 
 v0.0.5 (2021-01-12)
