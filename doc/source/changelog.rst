@@ -22,7 +22,8 @@ v0.0.5 (2021-01-12)
 
 * Allow user to vertically drag the horizontal separator between (code
   and stage) and info-pane.  If user's screen is vertically short,
-  this lets them see more of the tutorial.
+  this lets them see more of the tutorial.  (Thanks to Eoin Condron
+  for report.)
 
 
 v0.0.4 (2021-01-08)
