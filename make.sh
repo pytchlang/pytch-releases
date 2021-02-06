@@ -4,7 +4,7 @@ REPO_ROOT="$(dirname "$(realpath "$0")")"
 cd "$REPO_ROOT"
 
 # No harm if this has already been done:
-git submodule init
+git submodule --quiet init
 
 current_branch="$(git rev-parse --abbrev-ref HEAD)"
 
@@ -40,7 +40,7 @@ toplevel_htaccess() {
     sed "s/VERSION-STRING/$bare_version/" < "$REPO_ROOT"/toplevel-htaccess-template
 }
 
-git submodule update \
+git submodule --quiet update \
     && (
         # Special handling for the tutorials repo, to ensure we have
         # all branches up to date.
