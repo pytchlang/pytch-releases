@@ -3,6 +3,9 @@
 REPO_ROOT="$(dirname "$(realpath "$0")")"
 cd "$REPO_ROOT"
 
+# No harm if this has already been done:
+git submodule --quiet init
+
 current_branch="$(git rev-parse --abbrev-ref HEAD)"
 
 if [ "$current_branch" = develop ]; then
@@ -27,14 +30,17 @@ export PYTCH_DEPLOYMENT_ID=$(git rev-parse HEAD | cut -c -20)
 
 >&2 echo Making "$zipfile_name"
 
-LOGDIR="$(realpath build-logs/$(date +%Y%m%dT%H%M%S))"
-mkdir -p $LOGDIR
+logdir_relative="build-logs/$(date +%Y%m%dT%H%M%S)"
+LOGDIR="$REPO_ROOT/$logdir_relative"
+mkdir -p "$LOGDIR"
+
+>&2 echo Logging to "$logdir_relative"
 
 toplevel_htaccess() {
     sed "s/VERSION-STRING/$bare_version/" < "$REPO_ROOT"/toplevel-htaccess-template
 }
 
-git submodule update \
+git submodule --quiet update \
     && (
         # Special handling for the tutorials repo, to ensure we have
         # all branches up to date.
@@ -89,6 +95,7 @@ git submodule update \
         wait
     ) \
     && (
+        mkdir -p website-layer
         cd website-layer
         rm -rf "$containing_dir"
         mkdir -p "$containing_dir"
