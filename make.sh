@@ -3,6 +3,9 @@
 REPO_ROOT="$(dirname "$(realpath "$0")")"
 cd "$REPO_ROOT"
 
+# No harm if this has already been done:
+git submodule init
+
 current_branch="$(git rev-parse --abbrev-ref HEAD)"
 
 if [ "$current_branch" = develop ]; then
