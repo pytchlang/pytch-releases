@@ -61,4 +61,12 @@ done
 ) &
 
 wait
-echo "Built all; see *-preparation.(out|err) for details"
+
+echo
+echo "Built all"
+echo "See *-preparation.{out,err} for details"
+echo
+echo "You should now be able to run"
+echo "    ./pytch-build/makesite/local-server/dev-server.sh"
+echo "to launch a local development server"
+echo
