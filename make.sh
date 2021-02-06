@@ -30,8 +30,11 @@ export PYTCH_DEPLOYMENT_ID=$(git rev-parse HEAD | cut -c -20)
 
 >&2 echo Making "$zipfile_name"
 
-LOGDIR="$(realpath build-logs/$(date +%Y%m%dT%H%M%S))"
-mkdir -p $LOGDIR
+logdir_relative="build-logs/$(date +%Y%m%dT%H%M%S)"
+LOGDIR="$REPO_ROOT/$logdir_relative"
+mkdir -p "$LOGDIR"
+
+>&2 echo Logging to "$logdir_relative"
 
 toplevel_htaccess() {
     sed "s/VERSION-STRING/$bare_version/" < "$REPO_ROOT"/toplevel-htaccess-template
