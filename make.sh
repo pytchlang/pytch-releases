@@ -95,6 +95,7 @@ git submodule update \
         wait
     ) \
     && (
+        mkdir -p website-layer
         cd website-layer
         rm -rf "$containing_dir"
         mkdir -p "$containing_dir"
