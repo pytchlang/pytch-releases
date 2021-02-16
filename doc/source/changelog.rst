@@ -5,7 +5,7 @@ This page outlines what's changed as we've released new versions of
 Pytch.
 
 
-v0.0.7 (2021-MM-DD)
+v0.0.7 (2021-02-16)
 -------------------
 
 * (Internal build system improvements.)
