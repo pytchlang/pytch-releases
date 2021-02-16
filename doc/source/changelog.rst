@@ -5,6 +5,14 @@ This page outlines what's changed as we've released new versions of
 Pytch.
 
 
+v0.0.7 (2021-02-16)
+-------------------
+
+* (Internal build system improvements.)
+* Add documentation outlining how to get started with Pytch
+  development.
+
+
 v0.0.6 (2021-01-20)
 -------------------
 
@@ -17,7 +25,8 @@ v0.0.5 (2021-01-12)
 
 * Allow user to vertically drag the horizontal separator between (code
   and stage) and info-pane.  If user's screen is vertically short,
-  this lets them see more of the tutorial.
+  this lets them see more of the tutorial.  (Thanks to Eoin Condron
+  for report.)
 
 
 v0.0.4 (2021-01-08)
