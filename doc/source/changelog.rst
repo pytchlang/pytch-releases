@@ -9,6 +9,8 @@ v0.0.7 (2021-MM-DD)
 -------------------
 
 * (Internal build system improvements.)
+* Add documentation outlining how to get started with Pytch
+  development.
 
 
 v0.0.6 (2021-01-20)
