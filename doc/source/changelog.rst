@@ -8,6 +8,9 @@ Pytch.
 v0.0.8 (2021-MM-DD)
 -------------------
 
+* Show richer auto-complete information in code editor.
+* Update to new Skulpt.
+* (Internal developer-experience fixes.)
 
 
 v0.0.7 (2021-02-16)
