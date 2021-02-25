@@ -10,6 +10,7 @@ v0.0.8 (2021-MM-DD)
 
 * Show richer auto-complete information in code editor.
 * Update to new Skulpt.
+* Add support for Safari browser.
 * (Internal developer-experience fixes.)
 
 
