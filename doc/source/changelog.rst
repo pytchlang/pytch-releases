@@ -5,6 +5,15 @@ This page outlines what's changed as we've released new versions of
 Pytch.
 
 
+v0.0.8 (2021-02-26)
+-------------------
+
+* Show richer auto-complete information in code editor.
+* Update to new Skulpt.
+* Add support for Safari browser.
+* (Internal developer-experience fixes.)
+
+
 v0.0.7 (2021-02-16)
 -------------------
 
