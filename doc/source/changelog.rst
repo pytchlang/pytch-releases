@@ -8,6 +8,10 @@ Pytch.
 v0.0.9 (2021-MM-DD)
 -------------------
 
+* Bugfix: With the stage at a non-default size (as happens when the
+  user drags the divider), the location of a mouse click was computed
+  incorrectly, leading to wrong ``when_this_sprite_clicked``
+  behaviour.  Click coordinates are now computed correctly.
 
 
 v0.0.8 (2021-02-26)
