@@ -5,7 +5,7 @@ This page outlines what's changed as we've released new versions of
 Pytch.
 
 
-v0.0.9 (2021-MM-DD)
+v0.0.9 (2021-03-03)
 -------------------
 
 * Bugfix: With the stage at a non-default size (as happens when the
