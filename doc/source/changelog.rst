@@ -8,6 +8,16 @@ Pytch.
 v0.0.10 (2021-MM-DD)
 --------------------
 
+* Add ability to launch *demo* of tutorial, which creates a project
+  with code as of the completed tutorial, and not connected to that
+  tutorial.
+* Add a two-stop tour of the buttons required to build and green-flag
+  a project.  Enabled when first creating a project as a demo of a
+  tutorial.
+* Re-organise front page with "Featured projects", and information
+  about how to use Pytch.
+* Add instructions (as code comment) to the three tutorials included
+  as featured projects.
 
 
 v0.0.9 (2021-03-03)
