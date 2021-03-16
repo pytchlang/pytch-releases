@@ -5,7 +5,7 @@ This page outlines what's changed as we've released new versions of
 Pytch.
 
 
-v0.0.10 (2021-MM-DD)
+v0.0.10 (2021-03-16)
 --------------------
 
 * Add ability to launch *demo* of tutorial, which creates a project
