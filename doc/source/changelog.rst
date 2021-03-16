@@ -8,6 +8,7 @@ Pytch.
 v0.0.11 (2021-MM-DD)
 --------------------
 
+* Provide immediate feedback when creating demo from Featured Project.
 
 
 v0.0.10 (2021-03-16)
