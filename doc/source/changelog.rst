@@ -8,6 +8,8 @@ Pytch.
 v0.0.12 (2021-MM-DD)
 --------------------
 
+* Allow user to create a project by uploading a previously-downloaded
+  zipfile.
 
 
 v0.0.11 (2021-03-16)
