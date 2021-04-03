@@ -5,6 +5,13 @@ This page outlines what's changed as we've released new versions of
 Pytch.
 
 
+v0.0.12 (2021-04-03)
+--------------------
+
+* Allow user to create a project by uploading a previously-downloaded
+  zipfile.
+
+
 v0.0.11 (2021-03-16)
 --------------------
 
