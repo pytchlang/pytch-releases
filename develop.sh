@@ -9,6 +9,12 @@ for tool in node git virtualenv python3; do
     fi
 done
 
+node_version=$(node --version)
+if [ $(echo $node_version | grep -c -E \^v14\\.) -ne 1 ]; then
+    echo Need node v14 but have $node_version
+    exit 1
+fi
+
 
 ########################################################################
 
