@@ -1,6 +1,8 @@
 #!/bin/bash
 
 ########################################################################
+#
+# Check required (versions of) tools are available
 
 for tool in node git virtualenv python3; do
     if ! hash "$tool" 2> /dev/null; then
