@@ -10,7 +10,7 @@ v0.0.13 (2021-MM-DD)
 
 * Add ``ask_and_wait_for_answer()`` syscall, and corresponding method
   on ``Sprite`` and ``Stage``.
-* Minor improvements to developer docs.
+* Minor improvements to developer docs and scripts.
 
 
 v0.0.12 (2021-04-03)
