@@ -1,5 +1,17 @@
 #!/bin/bash
 
+########################################################################
+
+for tool in node git virtualenv python3; do
+    if ! hash "$tool" 2> /dev/null; then
+        echo Could not find "$tool"
+        exit 1
+    fi
+done
+
+
+########################################################################
+
 REPO_ROOT="$(dirname "$(realpath "$0")")"
 cd "$REPO_ROOT"
 
