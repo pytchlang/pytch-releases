@@ -24,6 +24,7 @@ done
     echo "Preparing VM ..."
 
     cd pytch-vm
+
     (
         npm install
         npm run devbuild
