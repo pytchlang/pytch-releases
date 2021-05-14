@@ -13,6 +13,7 @@ v0.0.13 (2021-MM-DD)
 * Minor improvements to developer docs and scripts.
 * Enable search (Ctrl-F) and search/replace (Ctrl-H) in code editor.
 * Update "Bunner" tutorial to latest pytch APIs
+* Minor bugfix: Make ``say_for_seconds()`` only cancel its own speech.
 
 
 v0.0.12 (2021-04-03)
