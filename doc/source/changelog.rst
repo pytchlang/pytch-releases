@@ -12,7 +12,6 @@ v0.0.13 (2021-MM-DD)
   on ``Sprite`` and ``Stage``.
 * Minor improvements to developer docs and scripts.
 * Enable search (Ctrl-F) and search/replace (Ctrl-H) in code editor.
-* Update "Bunner" tutorial to latest pytch APIs
 * Minor bugfix: Make ``say_for_seconds()`` only cancel its own speech.
 
 
