@@ -1,5 +1,25 @@
 #!/bin/bash
 
+########################################################################
+#
+# Check required (versions of) tools are available
+
+for tool in node git virtualenv python3; do
+    if ! hash "$tool" 2> /dev/null; then
+        echo Could not find "$tool"
+        exit 1
+    fi
+done
+
+node_version=$(node --version)
+if [ $(echo $node_version | grep -c -E \^v14\\.) -ne 1 ]; then
+    echo Need node v14 but have $node_version
+    exit 1
+fi
+
+
+########################################################################
+
 REPO_ROOT="$(dirname "$(realpath "$0")")"
 cd "$REPO_ROOT"
 
@@ -24,6 +44,7 @@ done
     echo "Preparing VM ..."
 
     cd pytch-vm
+
     (
         npm install
         npm run devbuild
