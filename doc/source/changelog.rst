@@ -5,7 +5,7 @@ This page outlines what's changed as we've released new versions of
 Pytch.
 
 
-v0.0.13 (2021-MM-DD)
+v0.0.13 (2021-05-15)
 --------------------
 
 * Add ``ask_and_wait_for_answer()`` syscall, and corresponding method
