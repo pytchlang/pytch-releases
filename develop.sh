@@ -38,8 +38,12 @@ for part in pytch-build pytch-vm pytch-webapp pytch-website; do
 done
 
 (
+    echo "Preparing tutorials repo ..."
+
     cd pytch-tutorials
     git checkout --quiet release-recipes
+
+    echo "Prepared tutorials repo"
 )
 
 ./pytch-build/makesite/pytch-git-status.sh
