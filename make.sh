@@ -30,6 +30,13 @@ if [ "$current_branch" = releases ]; then
         >&2 echo No tag found pointing to HEAD on releases
         exit 1
     fi
+
+    current_tutorials_branch="$(cd pytch-tutorials && git rev-parse --abbrev-ref HEAD)"
+    if [ "$current_tutorials_branch" != releases ]; then
+        >&2 echo Top level repo is on '"releases"' branch but tutorials is not
+        exit 1
+    fi
+
     bare_version=$(echo $current_tag | sed 's/^v//')
     zipfile_name=release-"$bare_version".zip
     containing_dir=releases/"$bare_version"
