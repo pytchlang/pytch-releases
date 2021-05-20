@@ -53,8 +53,6 @@ done
         fi
     done
 
-    git checkout --quiet release-recipes
-
     echo "Prepared tutorials repo"
 )
 
