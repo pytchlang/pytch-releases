@@ -24,13 +24,7 @@ fi
 
 current_branch="$(git rev-parse --abbrev-ref HEAD)"
 
-if [ "$current_branch" = develop ]; then
-    bare_version=""
-    develop_sha="$(git rev-parse develop | cut -c -12)"
-    zipfile_name=beta-g${develop_sha}.zip
-    containing_dir=beta/g${develop_sha}
-    export DEPLOY_BASE_URL=/${containing_dir}
-else
+if [ "$current_branch" = releases ]; then
     current_tag="$(git tag --points-at)"
     if [ -z "$current_tag" ]; then
         >&2 echo No tag found pointing to HEAD
@@ -40,6 +34,12 @@ else
     zipfile_name=release-"$bare_version".zip
     containing_dir=releases/"$bare_version"
     export DEPLOY_BASE_URL=/
+else
+    bare_version=""
+    develop_sha="$(git rev-parse develop | cut -c -12)"
+    zipfile_name=beta-g${develop_sha}.zip
+    containing_dir=beta/g${develop_sha}
+    export DEPLOY_BASE_URL=/${containing_dir}
 fi
 
 export PYTCH_DEPLOYMENT_ID=$(git rev-parse HEAD | cut -c -20)
