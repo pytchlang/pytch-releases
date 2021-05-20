@@ -42,6 +42,11 @@ if [ "$current_branch" = releases ]; then
     containing_dir=releases/"$bare_version"
     export DEPLOY_BASE_URL=/
 else
+    if [ ! -e pytch-tutorials/index.yaml ]; then
+        >&2 echo "No pytch-tutorials/index.yaml found; is correct branch checked out?"
+        exit 1
+    fi
+
     bare_version=""
     develop_sha="$(git rev-parse develop | cut -c -12)"
     zipfile_name=beta-g${develop_sha}.zip
