@@ -3,6 +3,15 @@
 REPO_ROOT="$(dirname "$(realpath "$0")")"
 cd "$REPO_ROOT"
 
+if [ $(git status --ignore-submodules=none --porcelain | wc -l) -ne 0 ]; then
+    (
+        echo "Working directory not clean; abandoning build"
+        echo
+        git status
+    ) >&2
+    exit 1
+fi
+
 # No harm if this has already been done:
 git submodule --quiet init
 
