@@ -22,9 +22,6 @@ if [ $(git status --ignore-submodules=none --porcelain | wc -l) -ne 0 ]; then
     exit 1
 fi
 
-# No harm if this has already been done:
-git submodule --quiet init
-
 current_branch="$(git rev-parse --abbrev-ref HEAD)"
 
 if [ "$current_branch" = develop ]; then
