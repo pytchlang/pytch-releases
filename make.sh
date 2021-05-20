@@ -27,7 +27,7 @@ current_branch="$(git rev-parse --abbrev-ref HEAD)"
 if [ "$current_branch" = releases ]; then
     current_tag="$(git tag --points-at)"
     if [ -z "$current_tag" ]; then
-        >&2 echo No tag found pointing to HEAD
+        >&2 echo No tag found pointing to HEAD on releases
         exit 1
     fi
     bare_version=$(echo $current_tag | sed 's/^v//')
