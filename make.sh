@@ -51,17 +51,6 @@ toplevel_htaccess() {
 
 git submodule --quiet update \
     && (
-        # Special handling for the tutorials repo, to ensure we have
-        # all branches up to date.
-        cd pytch-tutorials
-        git checkout --quiet releases
-        for branchname in $(git for-each-ref --format='%(refname)' refs/remotes/origin/ \
-                                | sed 's|^refs/remotes/origin/||' \
-                                | egrep -v '^HEAD|releases$'); do
-            git branch --quiet --force $branchname origin/$branchname
-        done
-    ) \
-    && (
         rm -rf pytch-vm/node_modules \
            pytch-vm/website-layer/layer-content \
            pytch-vm/website-layer/layer.zip
