@@ -41,6 +41,18 @@ done
     echo "Preparing tutorials repo ..."
 
     cd pytch-tutorials
+
+    # Ensure we have a local branch for every remote branch.
+
+    for branchname in $(git for-each-ref --format='%(refname)' refs/remotes/origin/ \
+                            | sed 's|^refs/remotes/origin/||'); do
+        if [ "$branchname" != HEAD ]; then
+            # Create branch if it doesn't already exist.
+            git show-ref --quiet "refs/heads/$branchname" \
+                || git branch --quiet "$branchname" "origin/$branchname"
+        fi
+    done
+
     git checkout --quiet release-recipes
 
     echo "Prepared tutorials repo"
