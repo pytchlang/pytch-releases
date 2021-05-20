@@ -3,6 +3,16 @@
 REPO_ROOT="$(dirname "$(realpath "$0")")"
 cd "$REPO_ROOT"
 
+# Rough test that submodules have been init'd correctly:
+if [ ! -x pytch-vm/website-layer/make.sh ]; then
+    (
+        echo "It looks like submodules have not been set up yet.  If you"
+        echo "have just cloned this repo, you can run 'develop.sh' to set"
+        echo "up the submodules and branches."
+    ) >&2
+    exit 1
+fi
+
 if [ $(git status --ignore-submodules=none --porcelain | wc -l) -ne 0 ]; then
     (
         echo "Working directory not clean; abandoning build"
