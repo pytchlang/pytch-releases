@@ -23,8 +23,12 @@ fi
 REPO_ROOT="$(dirname "$(realpath "$0")")"
 cd "$REPO_ROOT"
 
+echo "Initialising submodules ..."
+
 git submodule --quiet init
 git submodule --quiet update
+
+echo "Initialised submodules"
 
 for part in pytch-build pytch-vm pytch-webapp pytch-website; do
     (
