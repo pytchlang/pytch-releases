@@ -8,6 +8,7 @@ Pytch.
 v0.0.14 (2021-MM-DD)
 --------------------
 
+* Improve developer docs and scripts.
 
 
 v0.0.13 (2021-05-15)
