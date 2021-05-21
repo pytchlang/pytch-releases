@@ -30,14 +30,6 @@ git submodule --quiet update
 
 echo "Initialised submodules"
 
-# The pytch-tutorials submodule will be configured separately below.
-for part in pytch-build pytch-vm pytch-webapp pytch-website; do
-    (
-        cd $part
-        git checkout --quiet develop
-    )
-done
-
 (
     echo "Preparing tutorials repo ..."
 
