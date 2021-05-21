@@ -28,10 +28,8 @@ echo "Initialising submodules ..."
 git submodule --quiet init
 git submodule --quiet update
 
-echo "Initialised submodules"
-
 (
-    echo "Preparing tutorials repo ..."
+    echo "  Preparing tutorials repo ..."
 
     cd pytch-tutorials
 
@@ -46,7 +44,7 @@ echo "Initialised submodules"
         fi
     done
 
-    echo "Prepared tutorials repo"
+    echo "  Prepared tutorials repo"
 )
 
 # Where possible, check each submodule out at the first named branch
@@ -62,6 +60,8 @@ for m in $(git submodule foreach --quiet 'echo $name'); do
         fi
     )
 done
+
+echo "Initialised submodules"
 
 ./pytch-build/makesite/pytch-git-status.sh
 
