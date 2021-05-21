@@ -87,6 +87,7 @@ echo "Initialised submodules"
     (
         virtualenv -p python3 venv \
             && source venv/bin/activate \
+            && pip install --upgrade pip \
             && pip install -r requirements_dev.txt \
             && python setup.py install
     ) > "$REPO_ROOT"/pytch-build-preparation.out 2> "$REPO_ROOT"/pytch-build-preparation.err
