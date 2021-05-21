@@ -57,6 +57,20 @@ done
     echo "Prepared tutorials repo"
 )
 
+# Where possible, check each submodule out at the first named branch
+# referring to its HEAD.
+for m in $(git submodule foreach --quiet 'echo $name'); do
+    (
+        cd $m
+        branch=$(git branch --no-column --format="%(refname:short)" --points-at $(git rev-parse HEAD) \
+                     | grep -v "HEAD detached" \
+                     | head -1)
+        if [ ! -z "$branch" -a -z "$(git symbolic-ref --short -q HEAD)" ]; then
+            git checkout --quiet "$branch"
+        fi
+    )
+done
+
 ./pytch-build/makesite/pytch-git-status.sh
 
 (
