@@ -23,20 +23,45 @@ fi
 REPO_ROOT="$(dirname "$(realpath "$0")")"
 cd "$REPO_ROOT"
 
+echo "Initialising submodules ..."
+
 git submodule --quiet init
 git submodule --quiet update
 
-for part in pytch-build pytch-vm pytch-webapp pytch-website; do
+(
+    echo "  Preparing tutorials repo ..."
+
+    cd pytch-tutorials
+
+    # Ensure we have a local branch for every remote branch.
+
+    for branchname in $(git for-each-ref --format='%(refname)' refs/remotes/origin/ \
+                            | sed 's|^refs/remotes/origin/||'); do
+        if [ "$branchname" != HEAD ]; then
+            # Create branch if it doesn't already exist.
+            git show-ref --quiet "refs/heads/$branchname" \
+                || git branch --quiet "$branchname" "origin/$branchname"
+        fi
+    done
+
+    echo "  Prepared tutorials repo"
+)
+
+# Where possible, check each submodule out at the first named branch
+# referring to its HEAD.
+for m in $(git submodule foreach --quiet 'echo $name'); do
     (
-        cd $part
-        git checkout --quiet develop
+        cd $m
+        branch=$(git branch --no-column --format="%(refname:short)" --points-at $(git rev-parse HEAD) \
+                     | grep -v "HEAD detached" \
+                     | head -1)
+        if [ ! -z "$branch" -a -z "$(git symbolic-ref --short -q HEAD)" ]; then
+            git checkout --quiet "$branch"
+        fi
     )
 done
 
-(
-    cd pytch-tutorials
-    git checkout --quiet release-recipes
-)
+echo "Initialised submodules"
 
 ./pytch-build/makesite/pytch-git-status.sh
 
@@ -62,6 +87,7 @@ done
     (
         virtualenv -p python3 venv \
             && source venv/bin/activate \
+            && pip install --upgrade pip \
             && pip install -r requirements_dev.txt \
             && python setup.py install
     ) > "$REPO_ROOT"/pytch-build-preparation.out 2> "$REPO_ROOT"/pytch-build-preparation.err

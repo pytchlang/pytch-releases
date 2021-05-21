@@ -1,3 +1,8 @@
 website-layer/
 build-logs/
-pytch-{vm,build,webapp}-preparation.{out,err}
+pytch-build-preparation.err
+pytch-build-preparation.out
+pytch-vm-preparation.err
+pytch-vm-preparation.out
+pytch-webapp-preparation.err
+pytch-webapp-preparation.out

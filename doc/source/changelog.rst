@@ -5,6 +5,13 @@ This page outlines what's changed as we've released new versions of
 Pytch.
 
 
+v0.0.14 (2021-05-21)
+--------------------
+
+* Improve developer docs and scripts.
+* Update Welcome page.
+
+
 v0.0.13 (2021-05-15)
 --------------------
 

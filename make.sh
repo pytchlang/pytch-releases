@@ -3,27 +3,55 @@
 REPO_ROOT="$(dirname "$(realpath "$0")")"
 cd "$REPO_ROOT"
 
-# No harm if this has already been done:
-git submodule --quiet init
+# Rough test that submodules have been init'd correctly:
+if [ ! -x pytch-vm/website-layer/make.sh ]; then
+    (
+        echo "It looks like submodules have not been set up yet.  If you"
+        echo "have just cloned this repo, you can run 'develop.sh' to set"
+        echo "up the submodules and branches."
+    ) >&2
+    exit 1
+fi
+
+if [ $(git status --ignore-submodules=none --porcelain | wc -l) -ne 0 ]; then
+    (
+        echo "Working directory not clean; abandoning build"
+        echo
+        git status
+    ) >&2
+    exit 1
+fi
 
 current_branch="$(git rev-parse --abbrev-ref HEAD)"
 
-if [ "$current_branch" = develop ]; then
-    bare_version=""
-    develop_sha="$(git rev-parse develop | cut -c -12)"
-    zipfile_name=beta-g${develop_sha}.zip
-    containing_dir=beta/g${develop_sha}
-    export DEPLOY_BASE_URL=/${containing_dir}
-else
+if [ "$current_branch" = releases ]; then
     current_tag="$(git tag --points-at)"
     if [ -z "$current_tag" ]; then
-        >&2 echo No tag found pointing to HEAD
+        >&2 echo No tag found pointing to HEAD on releases
         exit 1
     fi
+
+    current_tutorials_branch="$(cd pytch-tutorials && git rev-parse --abbrev-ref HEAD)"
+    if [ "$current_tutorials_branch" != releases ]; then
+        >&2 echo Top level repo is on '"releases"' branch but tutorials is not
+        exit 1
+    fi
+
     bare_version=$(echo $current_tag | sed 's/^v//')
     zipfile_name=release-"$bare_version".zip
     containing_dir=releases/"$bare_version"
     export DEPLOY_BASE_URL=/
+else
+    if [ ! -e pytch-tutorials/index.yaml ]; then
+        >&2 echo "No pytch-tutorials/index.yaml found; is correct branch checked out?"
+        exit 1
+    fi
+
+    bare_version=""
+    head_sha="$(git rev-parse HEAD | cut -c -12)"
+    zipfile_name=beta-g${head_sha}.zip
+    containing_dir=beta/g${head_sha}
+    export DEPLOY_BASE_URL=/${containing_dir}
 fi
 
 export PYTCH_DEPLOYMENT_ID=$(git rev-parse HEAD | cut -c -20)
@@ -41,17 +69,6 @@ toplevel_htaccess() {
 }
 
 git submodule --quiet update \
-    && (
-        # Special handling for the tutorials repo, to ensure we have
-        # all branches up to date.
-        cd pytch-tutorials
-        git checkout --quiet releases
-        for branchname in $(git for-each-ref --format='%(refname)' refs/remotes/origin/ \
-                                | sed 's|^refs/remotes/origin/||' \
-                                | egrep -v '^HEAD|releases$'); do
-            git branch --quiet --force $branchname origin/$branchname
-        done
-    ) \
     && (
         rm -rf pytch-vm/node_modules \
            pytch-vm/website-layer/layer-content \
