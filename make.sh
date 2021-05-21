@@ -48,9 +48,9 @@ else
     fi
 
     bare_version=""
-    develop_sha="$(git rev-parse develop | cut -c -12)"
-    zipfile_name=beta-g${develop_sha}.zip
-    containing_dir=beta/g${develop_sha}
+    head_sha="$(git rev-parse HEAD | cut -c -12)"
+    zipfile_name=beta-g${head_sha}.zip
+    containing_dir=beta/g${head_sha}
     export DEPLOY_BASE_URL=/${containing_dir}
 fi
 
