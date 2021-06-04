@@ -8,6 +8,8 @@ Pytch.
 v0.0.15 (2021-MM-DD)
 --------------------
 
+* Update *Bunner* tutorial.
+* Fix minor layout, documentation, and developer-script problems.
 
 
 v0.0.14 (2021-05-21)
