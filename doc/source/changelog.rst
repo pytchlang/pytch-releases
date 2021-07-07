@@ -5,6 +5,43 @@ This page outlines what's changed as we've released new versions of
 Pytch.
 
 
+v0.0.16 (2021-07-07)
+--------------------
+
+* **Breaking:** Rename some Sprite and Stage methods to be closer to
+  Scratch conventions.
+
+  * The method ``self.get_x()`` has been replaced by the property
+    ``self.x_position``.
+  * The method ``self.get_y()`` has been replaced by the property
+    ``self.y_position``.
+  * The function ``pytch.key_is_pressed()`` has been renamed to
+    ``pytch.key_pressed()``.
+  * The method ``self.move_to_front_layer()`` has been renamed to
+    ``self.go_to_front_layer()``.
+  * The method ``self.move_to_back_layer()`` has been renamed to
+    ``self.go_to_back_layer()``.
+  * The method ``self.move_forward_layers()`` has been renamed to
+    ``self.go_forward_layers()``.
+  * The method ``self.move_backward_layers()`` has been renamed to
+    ``self.go_backward_layers()``.
+  * The method ``self.ask_and_wait_for_answer()`` has been renamed to
+    ``self.ask_and_wait()``.
+
+* **Breaking:** Remove the method ``self.say_nothing()``.  To remove a
+  Sprite's speech bubble, use ``self.say("")`` instead.
+
+* Update documentation and tutorials to reflect above changes.
+
+* Improve and extend documentation.
+
+* Experimental: Add variable watchers — ``pytch.show_variable(obj,
+  attr_name)``.
+
+* Add a help sidebar to the IDE, summarising available Pytch methods
+  and functions, with examples and Scratch equivalents.
+
+
 v0.0.15 (2021-06-04)
 --------------------
 
