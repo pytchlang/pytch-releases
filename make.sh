@@ -140,6 +140,9 @@ git submodule --quiet update \
 
         rm -f "$zipfile_name"
         zip -q -r "$zipfile_name" "$containing_dir"
+
+        tarfile_name="${zipfile_name%.zip}".tar.gz
+        tar zcf "$tarfile_name" "$containing_dir"
     )
 
 echo "$(pwd)"/website-layer/"$zipfile_name"
