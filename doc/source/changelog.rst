@@ -5,6 +5,20 @@ This page outlines what's changed as we've released new versions of
 Pytch.
 
 
+v0.0.17 (2021-07-22)
+--------------------
+
+* Provide more helpful errors if certain Pytch functions (e.g.,
+  ``pytch.wait_seconds()``) are called at top-level of user's program.
+* Add URL route to suggest a particular tutorial.
+* Update front page content.
+* Show full tracebacks for build errors.
+* Include "show/hide variable" in help sidebar.
+* Support images in tutorial content.
+* Show friendlier error page for unknown route.
+* Add *Ticket Vending Machine* tutorial.
+
+
 v0.0.16 (2021-07-07)
 --------------------
 

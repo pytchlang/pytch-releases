@@ -50,7 +50,18 @@ else
     bare_version=""
     head_sha="$(git rev-parse HEAD | cut -c -12)"
     zipfile_name=beta-g${head_sha}.zip
-    containing_dir=beta/g${head_sha}
+
+    if [ ! -z "$PYTCH_DEPLOY_BASE_URL" ]; then
+        containing_dir="${PYTCH_DEPLOY_BASE_URL#/}"
+        if [ "$PYTCH_DEPLOY_BASE_URL" = "$containing_dir" ]; then
+            >&2 echo "PYTCH_DEPLOY_BASE_URL must start with a '/' character"
+            exit 1
+        fi
+        >&2 echo "Using custom DEPLOY_BASE_URL $PYTCH_DEPLOY_BASE_URL"
+    else
+        containing_dir=beta/g${head_sha}
+    fi
+
     export DEPLOY_BASE_URL=/${containing_dir}
 fi
 
@@ -129,6 +140,9 @@ git submodule --quiet update \
 
         rm -f "$zipfile_name"
         zip -q -r "$zipfile_name" "$containing_dir"
+
+        tarfile_name="${zipfile_name%.zip}".tar.gz
+        tar zcf "$tarfile_name" "$containing_dir"
     )
 
 echo "$(pwd)"/website-layer/"$zipfile_name"
