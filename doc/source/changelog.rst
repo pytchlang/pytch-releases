@@ -5,7 +5,7 @@ This page outlines what's changed as we've released new versions of
 Pytch.
 
 
-v0.0.17 (2021-MM-DD)
+v0.0.17 (2021-07-22)
 --------------------
 
 * Provide more helpful errors if certain Pytch functions (e.g.,
