@@ -5,6 +5,13 @@ This page outlines what's changed as we've released new versions of
 Pytch.
 
 
+v0.0.18 (2021-07-27)
+--------------------
+
+* Update language acknowledging origin of ticket vending machine
+  tutorial.
+
+
 v0.0.17 (2021-07-22)
 --------------------
 
