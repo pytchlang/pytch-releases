@@ -5,6 +5,20 @@ This page outlines what's changed as we've released new versions of
 Pytch.
 
 
+v0.0.19 (2021-08-26)
+--------------------
+
+* Allow adding more than one asset (graphic / sound file) at once.
+  Forbid adding unknown asset types.
+* **Remove BUILD button** — the green flag now builds then sends
+  green-flag event.  Update tutorials accordingly.
+* Allow building by keyboard command from editor (``Ctrl-Enter`` and
+  ``Ctrl-Shift-Enter``).
+* Bugfixes: Multi-hunk patches in tutorials were not displayed
+  correctly.  Tooltip was not positioned correctly when changing IDE
+  layout.
+
+
 v0.0.18 (2021-07-27)
 --------------------
 
