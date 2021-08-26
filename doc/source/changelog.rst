@@ -5,7 +5,7 @@ This page outlines what's changed as we've released new versions of
 Pytch.
 
 
-v0.0.19 (2021-MM-DD)
+v0.0.19 (2021-08-26)
 --------------------
 
 * Allow adding more than one asset (graphic / sound file) at once.
