@@ -8,6 +8,8 @@ Pytch.
 v0.0.20 (2021-MM-DD)
 --------------------
 
+* Support rotation of Sprites.  (Touch- and click-detection is not yet
+  aware of rotation and so will be inaccurate for rotated Sprites.)
 
 
 v0.0.19 (2021-08-26)
