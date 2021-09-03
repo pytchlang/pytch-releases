@@ -5,7 +5,7 @@ This page outlines what's changed as we've released new versions of
 Pytch.
 
 
-v0.0.20 (2021-MM-DD)
+v0.0.20 (2021-09-03)
 --------------------
 
 * Support rotation of Sprites.  (Touch- and click-detection is not yet
