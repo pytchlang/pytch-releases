@@ -9,6 +9,7 @@ v0.0.21 (2021-MM-DD)
 --------------------
 
 * Minor wording changes in text content of site.
+* Add ``Sprite.size`` property.
 
 
 v0.0.20 (2021-09-03)
