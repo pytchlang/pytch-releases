@@ -8,6 +8,7 @@ Pytch.
 v0.0.22 (2021-MM-DD)
 --------------------
 
+* Fix race-condition bug in ``qbert`` tutorial.
 
 
 v0.0.21 (2021-09-08)
