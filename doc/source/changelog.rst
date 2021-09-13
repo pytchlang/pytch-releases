@@ -10,6 +10,7 @@ v0.0.22 (2021-MM-DD)
 
 * Fix race-condition bug in ``qbert`` tutorial.
 * Experimental: Allow easing functions in ``Sprite.glide_to_xy()``.
+* Add ability to rename a project.
 
 
 v0.0.21 (2021-09-08)
