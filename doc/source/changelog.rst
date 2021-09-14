@@ -12,6 +12,7 @@ v0.0.22 (2021-MM-DD)
 * Experimental: Allow easing functions in ``Sprite.glide_to_xy()``.
 * Add ability to rename a project.
 * Add ability to upload multiple project zipfiles at once.
+* Show version tag in navigation banner.
 
 
 v0.0.21 (2021-09-08)
