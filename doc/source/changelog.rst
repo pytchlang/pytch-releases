@@ -5,6 +5,16 @@ This page outlines what's changed as we've released new versions of
 Pytch.
 
 
+v0.0.22 (2021-09-14)
+--------------------
+
+* Fix race-condition bug in ``qbert`` tutorial.
+* Experimental: Allow easing functions in ``Sprite.glide_to_xy()``.
+* Add ability to rename a project.
+* Add ability to upload multiple project zipfiles at once.
+* Show version tag in navigation banner.
+
+
 v0.0.21 (2021-09-08)
 --------------------
 

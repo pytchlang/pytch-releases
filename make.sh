@@ -41,6 +41,7 @@ if [ "$current_branch" = releases ]; then
     zipfile_name=release-"$bare_version".zip
     containing_dir=releases/"$bare_version"
     export DEPLOY_BASE_URL=/
+    export PYTCH_VERSION_TAG=$current_tag
 else
     if [ ! -e pytch-tutorials/index.yaml ]; then
         >&2 echo "No pytch-tutorials/index.yaml found; is correct branch checked out?"
@@ -63,6 +64,7 @@ else
     fi
 
     export DEPLOY_BASE_URL=/${containing_dir}
+    export PYTCH_VERSION_TAG=g$head_sha
 fi
 
 export PYTCH_DEPLOYMENT_ID=$(git rev-parse HEAD | cut -c -20)
