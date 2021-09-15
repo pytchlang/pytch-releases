@@ -5,7 +5,7 @@ This page outlines what's changed as we've released new versions of
 Pytch.
 
 
-v0.0.23 (2021-MM-DD)
+v0.0.23 (2021-09-15)
 --------------------
 
 * Bring Bunner tutorial up-to-date for ``Sprite.direction`` property.
