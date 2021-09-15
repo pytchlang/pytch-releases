@@ -8,6 +8,7 @@ Pytch.
 v0.0.23 (2021-MM-DD)
 --------------------
 
+* Bring Bunner tutorial up-to-date for ``Sprite.direction`` property.
 
 
 v0.0.22 (2021-09-14)
