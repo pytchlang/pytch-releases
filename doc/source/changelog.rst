@@ -9,7 +9,7 @@ v0.0.24 (2021-MM-DD)
 --------------------
 
 * Expand documentation on development set-up; improve checks in
-  script.
+  script.  Make development scripts more portable.
 
 
 v0.0.23 (2021-09-15)
