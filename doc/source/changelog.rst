@@ -13,6 +13,7 @@ v0.0.24 (2021-MM-DD)
   docs.  Update a dependency.
 * Give better error messages (trying to set a sprite's ``direction``;
   giving ``say_for_seconds()`` a non-numeric duration argument).
+* Add ``pytch.stop_all()`` function.
 
 
 v0.0.23 (2021-09-15)
