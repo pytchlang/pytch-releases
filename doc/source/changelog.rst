@@ -12,8 +12,8 @@ v0.0.24 (2021-MM-DD)
 * Improve presentation of "Change your code like this" sections in
   tutorials.  Add pop-up help panel explaining how changes are shown.
 * Expand documentation on development set-up; improve checks in
-  script.  Make development scripts more portable.  Improve developer
-  docs.  Update various dependencies.
+  script.  Make development scripts more robust and portable.  Improve
+  developer docs.  Update various dependencies.
 * Give better error messages (trying to set a sprite's ``direction``;
   giving ``say_for_seconds()`` a non-numeric duration argument; giving
   ``say()`` a non-string, non-numeric content argument).
