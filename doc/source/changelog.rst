@@ -21,6 +21,7 @@ v0.0.24 (2021-MM-DD)
 * Replace "MyStuff" with "home" button in IDE.
 * Make browser window title contain more useful information.
 * Fix minor bug allowing deleted assets to still be used.
+* Add "catch the apple" tutorial.
 
 
 v0.0.23 (2021-09-15)
