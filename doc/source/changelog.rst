@@ -16,6 +16,7 @@ v0.0.24 (2021-MM-DD)
   giving ``say_for_seconds()`` a non-numeric duration argument; giving
   ``say()`` a non-string, non-numeric content argument).
 * Add ``pytch.stop_all()`` function.
+* Replace "MyStuff" with "home" button in IDE.
 
 
 v0.0.23 (2021-09-15)
