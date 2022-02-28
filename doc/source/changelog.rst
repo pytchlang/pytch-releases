@@ -5,6 +5,25 @@ This page outlines what's changed as we've released new versions of
 Pytch.
 
 
+v0.0.24 (2022-02-28)
+--------------------
+
+* Add full-screen layout.
+* Improve presentation of "Change your code like this" sections in
+  tutorials.  Add pop-up help panel explaining how changes are shown.
+* Expand documentation on development set-up; improve checks in
+  script.  Make development scripts more robust and portable.  Improve
+  developer docs.  Update various dependencies.
+* Give better error messages (trying to set a sprite's ``direction``;
+  giving ``say_for_seconds()`` a non-numeric duration argument; giving
+  ``say()`` a non-string, non-numeric content argument).
+* Add ``pytch.stop_all()`` function.
+* Replace "MyStuff" with "home" button in IDE.
+* Make browser window title contain more useful information.
+* Fix minor bug allowing deleted assets to still be used.
+* Add "catch the apple" tutorial.
+
+
 v0.0.23 (2021-09-15)
 --------------------
 
