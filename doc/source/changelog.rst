@@ -10,7 +10,7 @@ v0.0.24 (2021-MM-DD)
 
 * Add full-screen layout.
 * Improve presentation of "Change your code like this" sections in
-  tutorials.
+  tutorials.  Add pop-up help panel explaining how changes are shown.
 * Expand documentation on development set-up; improve checks in
   script.  Make development scripts more portable.  Improve developer
   docs.  Update various dependencies.
