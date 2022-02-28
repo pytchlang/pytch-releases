@@ -11,6 +11,8 @@ v0.0.24 (2021-MM-DD)
 * Expand documentation on development set-up; improve checks in
   script.  Make development scripts more portable.  Improve developer
   docs.  Update a dependency.
+* Give better error messages (trying to set a sprite's ``direction``;
+  giving ``say_for_seconds()`` a non-numeric duration argument).
 
 
 v0.0.23 (2021-09-15)
