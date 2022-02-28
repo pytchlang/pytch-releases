@@ -19,6 +19,7 @@ v0.0.24 (2021-MM-DD)
   ``say()`` a non-string, non-numeric content argument).
 * Add ``pytch.stop_all()`` function.
 * Replace "MyStuff" with "home" button in IDE.
+* Make browser window title contain more useful information.
 * Fix minor bug allowing deleted assets to still be used.
 
 
