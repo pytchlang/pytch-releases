@@ -8,6 +8,7 @@ Pytch.
 v0.0.26 (2022-MM-DD)
 --------------------
 
+* Add icons to green-flag and red-stop buttons.
 
 
 v0.0.25 (2022-03-04)
