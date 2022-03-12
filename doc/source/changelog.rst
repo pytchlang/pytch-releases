@@ -5,6 +5,14 @@ This page outlines what's changed as we've released new versions of
 Pytch.
 
 
+v0.0.26 (2022-03-12)
+--------------------
+
+* Add icons to green-flag and red-stop buttons.
+* Add ability to select multiple projects and then delete them all at
+  once.
+
+
 v0.0.25 (2022-03-04)
 --------------------
 
