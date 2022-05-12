@@ -9,6 +9,8 @@ v0.0.27 (2022-MM-DD)
 --------------------
 
 * Add challenges to "hello world" tutorial.
+* Add difficulty tags to tutorial summary cards.  (Thanks to Justine
+  Moulin for contributing this work.)
 
 
 v0.0.26 (2022-03-12)
