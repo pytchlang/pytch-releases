@@ -8,6 +8,7 @@ Pytch.
 v0.0.27 (2022-MM-DD)
 --------------------
 
+* Add challenges to "hello world" tutorial.
 
 
 v0.0.26 (2022-03-12)
