@@ -12,6 +12,7 @@ v0.0.27 (2022-MM-DD)
 * Add difficulty tags to tutorial summary cards.  (Thanks to Justine
   Moulin for contributing this work.)
 * Add ability to create "bare-bones" project (with no example code).
+* Provide default name when creating a new project.
 
 
 v0.0.26 (2022-03-12)
