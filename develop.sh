@@ -25,6 +25,15 @@ cd_or_fail() { cd "$1" || exit 1; }
 REPO_ROOT="$(dirname "$(realpath "$0")")"
 cd_or_fail "$REPO_ROOT"
 
+# Bail if it looks like we've already run.
+if [ -e pytch-vm/src ] || [ -e pytch-webapp/src ]; then
+    echo
+    echo "It looks like development set-up has already been done"
+    echo "Not making any changes"
+    echo
+    exit 1
+fi
+
 echo "Initialising submodules ..."
 
 git submodule --quiet init
