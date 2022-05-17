@@ -8,6 +8,8 @@ Pytch.
 v0.0.28 (2022-MM-DD)
 --------------------
 
+* Add "blue invaders" tutorial.
+* Improve organisation of some tutorials.
 
 
 v0.0.27 (2022-05-16)
