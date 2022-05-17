@@ -51,6 +51,9 @@ git submodule --quiet update
 
 # Where possible, check each submodule out at the first named branch
 # referring to its HEAD.
+#
+# I do mean 'echo $name' in single quotes:
+# shellcheck disable=SC2016
 for m in $(git submodule foreach --quiet 'echo $name'); do
     (
         cd_or_fail "$m"
@@ -87,6 +90,8 @@ echo "Initialised submodules"
     cd_or_fail pytch-build
 
     (
+        # Don't shellcheck venv/bin/activate:
+        # shellcheck disable=SC1091
         virtualenv -p python3 venv \
             && source venv/bin/activate \
             && pip install --upgrade pip \
