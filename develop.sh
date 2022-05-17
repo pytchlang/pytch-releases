@@ -30,6 +30,13 @@ echo "Initialising submodules ..."
 git submodule --quiet init
 git submodule --quiet update
 
+if [ ! -e pytch-vm/src ] || [ ! -e pytch-webapp/src ]; then
+    echo
+    echo "Failed to initialise submodules"
+    echo
+    exit 1
+fi
+
 (
     echo "  Preparing tutorials repo ..."
 
