@@ -57,7 +57,7 @@ for m in $(git submodule foreach --quiet 'echo $name'); do
         branch=$(git branch --no-column --format="%(refname:short)" --points-at $(git rev-parse HEAD) \
                      | grep -v "HEAD detached" \
                      | head -1)
-        if [ ! -z "$branch" -a -z "$(git symbolic-ref --short -q HEAD)" ]; then
+        if [ -n "$branch" ] && [ -z "$(git symbolic-ref --short -q HEAD)" ]; then
             git checkout --quiet "$branch"
         fi
     )
