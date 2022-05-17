@@ -12,26 +12,44 @@ for tool in node git virtualenv python3 realpath; do
 done
 
 node_version=$(node --version)
-if [ $(echo $node_version | grep -c -E \^v14\\.) -ne 1 ]; then
-    echo Need node v14 but have $node_version
+if [ "$(echo "$node_version" | grep -c -E '^v14[.]')" -ne 1 ]; then
+    echo Need node v14 but have "$node_version"
     exit 1
 fi
 
 
 ########################################################################
 
+cd_or_fail() { cd "$1" || exit 1; }
+
 REPO_ROOT="$(dirname "$(realpath "$0")")"
-cd "$REPO_ROOT"
+cd_or_fail "$REPO_ROOT"
+
+# Bail if it looks like we've already run.
+if [ -e pytch-vm/src ] || [ -e pytch-webapp/src ]; then
+    echo
+    echo "It looks like development set-up has already been done"
+    echo "Not making any changes"
+    echo
+    exit 1
+fi
 
 echo "Initialising submodules ..."
 
 git submodule --quiet init
 git submodule --quiet update
 
+if [ ! -e pytch-vm/src ] || [ ! -e pytch-webapp/src ]; then
+    echo
+    echo "Failed to initialise submodules"
+    echo
+    exit 1
+fi
+
 (
     echo "  Preparing tutorials repo ..."
 
-    cd pytch-tutorials
+    cd_or_fail pytch-tutorials
 
     # Ensure we have a local branch for every remote branch.
 
@@ -49,13 +67,16 @@ git submodule --quiet update
 
 # Where possible, check each submodule out at the first named branch
 # referring to its HEAD.
+#
+# I do mean 'echo $name' in single quotes:
+# shellcheck disable=SC2016
 for m in $(git submodule foreach --quiet 'echo $name'); do
     (
-        cd $m
-        branch=$(git branch --no-column --format="%(refname:short)" --points-at $(git rev-parse HEAD) \
+        cd_or_fail "$m"
+        branch=$(git branch --no-column --format="%(refname:short)" --points-at "$(git rev-parse HEAD)" \
                      | grep -v "HEAD detached" \
                      | head -1)
-        if [ ! -z "$branch" -a -z "$(git symbolic-ref --short -q HEAD)" ]; then
+        if [ -n "$branch" ] && [ -z "$(git symbolic-ref --short -q HEAD)" ]; then
             git checkout --quiet "$branch"
         fi
     )
@@ -68,12 +89,12 @@ echo "Initialised submodules"
 (
     echo "Preparing VM ..."
 
-    cd pytch-vm
+    cd_or_fail pytch-vm
 
     (
         npm install
         npm run devbuild
-        ( cd dist; ln -s skulpt.js skulpt.min.js )
+        ( cd_or_fail dist; ln -s skulpt.js skulpt.min.js )
     ) > "$REPO_ROOT"/pytch-vm-preparation.out 2> "$REPO_ROOT"/pytch-vm-preparation.err
 
     echo "Prepared VM"
@@ -82,9 +103,11 @@ echo "Initialised submodules"
 (
     echo "Preparing build tools ..."
 
-    cd pytch-build
+    cd_or_fail pytch-build
 
     (
+        # Don't shellcheck venv/bin/activate:
+        # shellcheck disable=SC1091
         virtualenv -p python3 venv \
             && source venv/bin/activate \
             && pip install --upgrade pip \
@@ -98,7 +121,7 @@ echo "Initialised submodules"
 (
     echo "Preparing webapp ..."
 
-    cd pytch-webapp
+    cd_or_fail pytch-webapp
 
     (
         npm install
