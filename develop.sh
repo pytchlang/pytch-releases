@@ -12,8 +12,8 @@ for tool in node git virtualenv python3 realpath; do
 done
 
 node_version=$(node --version)
-if [ $(echo $node_version | grep -c -E \^v14\\.) -ne 1 ]; then
-    echo Need node v14 but have $node_version
+if [ "$(echo "$node_version" | grep -c -E '^v14[.]')" -ne 1 ]; then
+    echo Need node v14 but have "$node_version"
     exit 1
 fi
 
@@ -54,7 +54,7 @@ git submodule --quiet update
 for m in $(git submodule foreach --quiet 'echo $name'); do
     (
         cd_or_fail "$m"
-        branch=$(git branch --no-column --format="%(refname:short)" --points-at $(git rev-parse HEAD) \
+        branch=$(git branch --no-column --format="%(refname:short)" --points-at "$(git rev-parse HEAD)" \
                      | grep -v "HEAD detached" \
                      | head -1)
         if [ -n "$branch" ] && [ -z "$(git symbolic-ref --short -q HEAD)" ]; then
