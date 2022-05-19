@@ -5,6 +5,13 @@ This page outlines what's changed as we've released new versions of
 Pytch.
 
 
+v0.0.28 (2022-05-19)
+--------------------
+
+* Add "blue invaders" tutorial.
+* Improve organisation of some tutorials.
+
+
 v0.0.27 (2022-05-16)
 --------------------
 
