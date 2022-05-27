@@ -8,6 +8,8 @@ Pytch.
 v0.0.29 (2022-MM-DD)
 --------------------
 
+* Fix bug whereby specifying ``Sounds`` as a non-list crashed app.
+
 
 
 v0.0.28 (2022-05-19)
