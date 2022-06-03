@@ -5,6 +5,14 @@ This page outlines what's changed as we've released new versions of
 Pytch.
 
 
+v0.0.29 (2022-06-03)
+--------------------
+
+* Fix bug whereby specifying ``Sounds`` as a non-list crashed app.
+* Allow tutorial authors to include Scratchblocks code.  (Thanks to
+  Justine Moulin for contributing this work.)
+
+
 v0.0.28 (2022-05-19)
 --------------------
 
