@@ -9,7 +9,8 @@ v0.0.29 (2022-MM-DD)
 --------------------
 
 * Fix bug whereby specifying ``Sounds`` as a non-list crashed app.
-
+* Allow tutorial authors to include Scratchblocks code.  (Thanks to
+  Justine Moulin for contributing this work.)
 
 
 v0.0.28 (2022-05-19)
