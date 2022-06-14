@@ -10,6 +10,7 @@ v0.0.30 (2022-MM-DD)
 
 * Make messages for syntax errors more helpful, by means of Tiger
   Python.
+* Simplify the *Catch the apple* tutorial.
 
 
 v0.0.29 (2022-06-03)
