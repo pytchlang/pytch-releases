@@ -5,6 +5,15 @@ This page outlines what's changed as we've released new versions of
 Pytch.
 
 
+v0.0.30 (2022-06-16)
+--------------------
+
+* Make messages for syntax errors more helpful, by means of Tiger
+  Python.
+* Simplify the *Catch the apple* tutorial.
+* Exit full-screen mode if an error occurs.
+
+
 v0.0.29 (2022-06-03)
 --------------------
 
