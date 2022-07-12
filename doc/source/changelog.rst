@@ -9,6 +9,8 @@ v0.0.31 (2022-MM-DD)
 --------------------
 
 * Add ability to make a copy of a project.
+* Fix bug whereby attempting to add a corrupt image asset made app
+  hang.
 
 
 v0.0.30 (2022-06-16)
