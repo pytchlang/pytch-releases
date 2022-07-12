@@ -5,7 +5,7 @@ This page outlines what's changed as we've released new versions of
 Pytch.
 
 
-v0.0.31 (2022-MM-DD)
+v0.0.31 (2022-07-12)
 --------------------
 
 * Add ability to make a copy of a project.
