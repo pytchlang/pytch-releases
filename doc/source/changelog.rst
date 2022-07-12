@@ -8,6 +8,7 @@ Pytch.
 v0.0.31 (2022-MM-DD)
 --------------------
 
+* Add ability to make a copy of a project.
 
 
 v0.0.30 (2022-06-16)
