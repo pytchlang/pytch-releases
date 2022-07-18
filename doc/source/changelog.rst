@@ -8,6 +8,8 @@ Pytch.
 v0.0.32 (2022-MM-DD)
 --------------------
 
+* Fix minor bug whereby undo history in editor contains "loading"
+  text.
 
 
 v0.0.31 (2022-07-12)
