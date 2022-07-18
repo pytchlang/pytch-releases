@@ -5,6 +5,14 @@ This page outlines what's changed as we've released new versions of
 Pytch.
 
 
+v0.0.32 (2022-07-18)
+--------------------
+
+* Fix minor bug whereby undo history in editor contains "loading"
+  text.
+* Disable "overwrite" mode in code editor.
+
+
 v0.0.31 (2022-07-12)
 --------------------
 
