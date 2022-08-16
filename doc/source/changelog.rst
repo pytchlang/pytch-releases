@@ -11,6 +11,8 @@ v0.0.33 (2022-MM-DD)
 * Fix bug whereby attempting to use an unsupported sound asset made
   app hang.
 * Give more useful error if user's Stage has no ``Backdrops``.
+* Fix bug whereby rapidly deleting and creating clones could sometimes
+  lead to an unhelpful error.
 
 
 v0.0.32 (2022-07-18)
