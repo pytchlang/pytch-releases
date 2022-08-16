@@ -10,6 +10,7 @@ v0.0.33 (2022-MM-DD)
 
 * Fix bug whereby attempting to use an unsupported sound asset made
   app hang.
+* Give more useful error if user's Stage has no ``Backdrops``.
 
 
 v0.0.32 (2022-07-18)
