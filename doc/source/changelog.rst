@@ -8,6 +8,8 @@ Pytch.
 v0.0.33 (2022-MM-DD)
 --------------------
 
+* Fix bug whereby attempting to use an unsupported sound asset made
+  app hang.
 
 
 v0.0.32 (2022-07-18)
