@@ -15,6 +15,7 @@ v0.0.33 (2022-MM-DD)
   lead to an unhelpful error.
 * Detect very-long-running ``while`` or ``for`` loops when importing
   user's code and raise an error.
+* Minor updates to user-level documentation.
 
 
 v0.0.32 (2022-07-18)
