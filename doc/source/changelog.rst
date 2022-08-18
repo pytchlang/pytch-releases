@@ -17,6 +17,7 @@ v0.0.33 (2022-MM-DD)
   user's code and raise an error.
 * Minor updates to user-level documentation.
 * Update to current upstream Skulpt.
+* Fix inconsistent reporting and go-to-location behaviour for errors.
 
 
 v0.0.32 (2022-07-18)
