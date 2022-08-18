@@ -16,6 +16,7 @@ v0.0.33 (2022-MM-DD)
 * Detect very-long-running ``while`` or ``for`` loops when importing
   user's code and raise an error.
 * Minor updates to user-level documentation.
+* Update to current upstream Skulpt.
 
 
 v0.0.32 (2022-07-18)
