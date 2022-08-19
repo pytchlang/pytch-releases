@@ -5,7 +5,7 @@ This page outlines what's changed as we've released new versions of
 Pytch.
 
 
-v0.0.33 (2022-MM-DD)
+v0.0.33 (2022-08-19)
 --------------------
 
 * Fix bug whereby attempting to use an unsupported sound asset made
