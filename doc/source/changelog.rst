@@ -5,6 +5,22 @@ This page outlines what's changed as we've released new versions of
 Pytch.
 
 
+v0.0.33 (2022-08-19)
+--------------------
+
+* Fix bug whereby attempting to use an unsupported sound asset made
+  app hang.
+* Give more useful error if user's Stage has no ``Backdrops``.
+* Fix bug whereby rapidly deleting and creating clones could sometimes
+  lead to an unhelpful error.  (Thanks to Olus Education student Leo
+  Mirolo for the report.)
+* Detect very-long-running ``while`` or ``for`` loops when importing
+  user's code and raise an error.
+* Minor updates to user-level documentation.
+* Update to current upstream Skulpt.
+* Fix inconsistent reporting and go-to-location behaviour for errors.
+
+
 v0.0.32 (2022-07-18)
 --------------------
 
