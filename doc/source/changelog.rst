@@ -12,7 +12,8 @@ v0.0.33 (2022-MM-DD)
   app hang.
 * Give more useful error if user's Stage has no ``Backdrops``.
 * Fix bug whereby rapidly deleting and creating clones could sometimes
-  lead to an unhelpful error.
+  lead to an unhelpful error.  (Thanks to Olus Education student Leo
+  Mirolo for the report.)
 * Detect very-long-running ``while`` or ``for`` loops when importing
   user's code and raise an error.
 * Minor updates to user-level documentation.
