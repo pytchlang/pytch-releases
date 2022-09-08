@@ -8,6 +8,8 @@ Pytch.
 v0.0.34 (2022-MM-DD)
 --------------------
 
+* When copying code from a "Change your code like this" section of a
+  tutorial, convert ``"·"`` characters back into spaces.
 
 
 v0.0.33 (2022-08-19)
