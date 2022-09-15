@@ -5,7 +5,7 @@ This page outlines what's changed as we've released new versions of
 Pytch.
 
 
-v0.0.34 (2022-MM-DD)
+v0.0.34 (2022-09-15)
 --------------------
 
 * When copying code from a "Change your code like this" section of a
