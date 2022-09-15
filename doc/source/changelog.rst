@@ -5,6 +5,16 @@ This page outlines what's changed as we've released new versions of
 Pytch.
 
 
+v0.0.34 (2022-09-15)
+--------------------
+
+* When copying code from a "Change your code like this" section of a
+  tutorial, convert ``"·"`` characters back into spaces.
+* Add support for controlling the volume of sounds played by sprites
+  or the stage.
+* Add *Multiple choice quiz* tutorial.
+
+
 v0.0.33 (2022-08-19)
 --------------------
 
