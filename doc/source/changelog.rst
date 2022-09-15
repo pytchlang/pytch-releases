@@ -12,6 +12,7 @@ v0.0.34 (2022-MM-DD)
   tutorial, convert ``"·"`` characters back into spaces.
 * Add support for controlling the volume of sounds played by sprites
   or the stage.
+* Add *Multiple choice quiz* tutorial.
 
 
 v0.0.33 (2022-08-19)
