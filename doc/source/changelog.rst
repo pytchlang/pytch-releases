@@ -5,7 +5,7 @@ This page outlines what's changed as we've released new versions of
 Pytch.
 
 
-v0.0.35 (2022-MM-DD)
+v0.0.35 (2022-09-29)
 --------------------
 
 * Divide help sidebar into collapsible sections.
