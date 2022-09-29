@@ -8,6 +8,7 @@ Pytch.
 v0.0.35 (2022-MM-DD)
 --------------------
 
+* Divide help sidebar into collapsible sections.
 
 
 v0.0.34 (2022-09-15)
