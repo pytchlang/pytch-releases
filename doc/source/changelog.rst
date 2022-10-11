@@ -9,6 +9,7 @@ v0.0.36 (2022-MM-DD)
 --------------------
 
 * Update developer set-up documentation.
+* Add ability to crop/scale image assets (experimental).
 
 
 v0.0.35 (2022-09-29)
