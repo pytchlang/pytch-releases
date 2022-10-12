@@ -5,7 +5,7 @@ This page outlines what's changed as we've released new versions of
 Pytch.
 
 
-v0.0.36 (2022-MM-DD)
+v0.0.36 (2022-10-12)
 --------------------
 
 * Update developer set-up documentation.
