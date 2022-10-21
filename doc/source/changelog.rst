@@ -8,6 +8,8 @@ Pytch.
 v0.0.37 (2022-MM-DD)
 --------------------
 
+* To celebrate EU Code Week 2022, we are officially launching v1 of
+  Pytch!
 
 
 v0.0.36 (2022-10-12)
