@@ -5,7 +5,7 @@ This page outlines what's changed as we've released new versions of
 Pytch.
 
 
-v0.0.37 (2022-MM-DD)
+v1.0.0 (2022-10-21)
 --------------------
 
 * To celebrate EU Code Week 2022, we are officially launching v1 of
