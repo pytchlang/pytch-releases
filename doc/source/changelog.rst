@@ -8,6 +8,8 @@ Pytch.
 v1.0.1 (2022-MM-DD)
 --------------------
 
+* Add *Splat the moles* tutorial.
+* Sort tutorials list in order of increasing difficulty.
 
 
 v1.0.0 (2022-10-21)
