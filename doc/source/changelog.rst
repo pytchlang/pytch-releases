@@ -5,6 +5,16 @@ This page outlines what's changed as we've released new versions of
 Pytch.
 
 
+v1.1.0 (2022-11-29)
+--------------------
+
+* Add *Splat the moles* tutorial.
+* Sort tutorials list in order of increasing difficulty.
+* Fix bug whereby cropped and/or scaled images lost their cropping
+  and/or scaling information when the project was downloaded as a
+  zipfile.
+
+
 v1.0.0 (2022-10-21)
 --------------------
 
