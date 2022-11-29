@@ -5,7 +5,7 @@ This page outlines what's changed as we've released new versions of
 Pytch.
 
 
-v1.1.0 (2022-MM-DD)
+v1.1.0 (2022-11-29)
 --------------------
 
 * Add *Splat the moles* tutorial.
