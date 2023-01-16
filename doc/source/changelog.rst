@@ -5,6 +5,13 @@ This page outlines what's changed as we've released new versions of
 Pytch.
 
 
+v1.2.0 (2023-01-16)
+--------------------
+
+* Fix bug whereby cropped and/or scaled images lost their cropping
+  and/or scaling information when making a copy of the project.
+
+
 v1.1.0 (2022-11-29)
 --------------------
 
