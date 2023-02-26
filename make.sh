@@ -96,6 +96,7 @@ git submodule --quiet update \
            pytch-website/website-layer/layer-content \
            pytch-website/website-layer/layer.zip
         rm -rf pytch-build/venv \
+           pytch-build/.venv \
            pytch-build/website-layer/layer-content \
            pytch-build/website-layer/layer.zip
     ) \
