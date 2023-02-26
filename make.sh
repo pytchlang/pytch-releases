@@ -15,7 +15,7 @@ if [ ! -x pytch-vm/website-layer/make.sh ]; then
     exit 1
 fi
 
-if [ $(git status --ignore-submodules=none --porcelain | wc -l) -ne 0 ]; then
+if [ "$(git status --ignore-submodules=none --porcelain | wc -l)" -ne 0 ]; then
     (
         echo "Working directory not clean; abandoning build"
         echo
@@ -101,26 +101,26 @@ git submodule --quiet update \
     && (
         (
             cd pytch-vm
-            website-layer/make.sh > $LOGDIR/pytch-vm.out 2> $LOGDIR/pytch-vm.err
+            website-layer/make.sh > "$LOGDIR"/pytch-vm.out 2> "$LOGDIR"/pytch-vm.err
             >&2 echo Built pytch-vm layer
         ) &
 
         (
             cd pytch-webapp
-            website-layer/make.sh > $LOGDIR/pytch-webapp.out 2> $LOGDIR/pytch-webapp.err
+            website-layer/make.sh > "$LOGDIR"/pytch-webapp.out 2> "$LOGDIR"/pytch-webapp.err
             >&2 echo Built pytch-webapp layer
         ) &
 
         (
             cd pytch-website
-            website-layer/make.sh > $LOGDIR/pytch-website.out 2> $LOGDIR/pytch-website.err
+            website-layer/make.sh > "$LOGDIR"/pytch-website.out 2> "$LOGDIR"/pytch-website.err
             >&2 echo Built pytch-website layer
         ) &
 
         (
             # This builds the tutorials layer, hence break in pattern for out/err files.
             cd pytch-build
-            makesite/tutorials-layer.sh > $LOGDIR/pytch-tutorials.out 2> $LOGDIR/pytch-tutorials.err
+            makesite/tutorials-layer.sh > "$LOGDIR"/pytch-tutorials.out 2> "$LOGDIR"/pytch-tutorials.err
             >&2 echo Built pytch-tutorials layer
         ) &
 
@@ -134,12 +134,12 @@ git submodule --quiet update \
 
         # The tutorials come from 'pytch-build'.
         for repo in pytch-vm pytch-webapp pytch-website pytch-build; do
-            unzip -q -d $containing_dir ../$repo/website-layer/layer.zip
+            unzip -q -d "$containing_dir" ../"$repo"/website-layer/layer.zip
         done
 
-        if [ ! -z $bare_version ]; then
-            >&2 echo Writing htaccess to redirect $bare_version
-            toplevel_htaccess $bare_version > "$containing_dir"/toplevel-dot-htaccess
+        if [ ! -z "$bare_version" ]; then
+            >&2 echo Writing htaccess to redirect "$bare_version"
+            toplevel_htaccess "$bare_version" > "$containing_dir"/toplevel-dot-htaccess
         fi
 
         rm -f "$zipfile_name"
