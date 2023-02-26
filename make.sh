@@ -54,7 +54,7 @@ else
     head_sha="$(git rev-parse HEAD | cut -c -12)"
     zipfile_name=beta-g${head_sha}.zip
 
-    if [ ! -z "$PYTCH_DEPLOY_BASE_URL" ]; then
+    if [ -n "$PYTCH_DEPLOY_BASE_URL" ]; then
         containing_dir="${PYTCH_DEPLOY_BASE_URL#/}"
         if [ "$PYTCH_DEPLOY_BASE_URL" = "$containing_dir" ]; then
             >&2 echo "PYTCH_DEPLOY_BASE_URL must start with a '/' character"
@@ -137,7 +137,7 @@ git submodule --quiet update \
             unzip -q -d "$containing_dir" ../"$repo"/website-layer/layer.zip
         done
 
-        if [ ! -z "$bare_version" ]; then
+        if [ -n "$bare_version" ]; then
             >&2 echo Writing htaccess to redirect "$bare_version"
             toplevel_htaccess "$bare_version" > "$containing_dir"/toplevel-dot-htaccess
         fi
