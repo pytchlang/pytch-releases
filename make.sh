@@ -3,7 +3,7 @@
 cd_or_fail() { cd "$1" || exit 1; }
 
 REPO_ROOT="$(dirname "$(realpath "$0")")"
-cd "$REPO_ROOT"
+cd_or_fail "$REPO_ROOT"
 
 # Rough test that submodules have been init'd correctly:
 if [ ! -x pytch-vm/website-layer/make.sh ]; then
@@ -128,7 +128,7 @@ git submodule --quiet update \
     ) \
     && (
         mkdir -p website-layer
-        cd website-layer
+        cd_or_fail website-layer
         rm -rf "$containing_dir"
         mkdir -p "$containing_dir"
 
