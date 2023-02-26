@@ -69,7 +69,8 @@ else
     export PYTCH_VERSION_TAG=g$head_sha
 fi
 
-export PYTCH_DEPLOYMENT_ID=$(git rev-parse HEAD | cut -c -20)
+PYTCH_DEPLOYMENT_ID=$(git rev-parse HEAD | cut -c -20)
+export PYTCH_DEPLOYMENT_ID
 
 >&2 echo Making "$zipfile_name"
 
