@@ -1,5 +1,7 @@
 #!/bin/bash
 
+cd_or_fail() { cd "$1" || exit 1; }
+
 REPO_ROOT="$(dirname "$(realpath "$0")")"
 cd "$REPO_ROOT"
 
