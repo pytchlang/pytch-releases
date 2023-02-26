@@ -39,7 +39,7 @@ if [ "$current_branch" = releases ]; then
         exit 1
     fi
 
-    bare_version=$(echo $current_tag | sed 's/^v//')
+    bare_version="${current_tag#v}"
     zipfile_name=release-"$bare_version".zip
     containing_dir=releases/"$bare_version"
     export DEPLOY_BASE_URL=/
