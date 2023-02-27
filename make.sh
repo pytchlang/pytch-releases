@@ -1,7 +1,9 @@
 #!/bin/bash
 
+cd_or_fail() { cd "$1" || exit 1; }
+
 REPO_ROOT="$(dirname "$(realpath "$0")")"
-cd "$REPO_ROOT"
+cd_or_fail "$REPO_ROOT"
 
 # Rough test that submodules have been init'd correctly:
 if [ ! -x pytch-vm/website-layer/make.sh ]; then
@@ -13,7 +15,7 @@ if [ ! -x pytch-vm/website-layer/make.sh ]; then
     exit 1
 fi
 
-if [ $(git status --ignore-submodules=none --porcelain | wc -l) -ne 0 ]; then
+if [ "$(git status --ignore-submodules=none --porcelain | wc -l)" -ne 0 ]; then
     (
         echo "Working directory not clean; abandoning build"
         echo
@@ -37,7 +39,7 @@ if [ "$current_branch" = releases ]; then
         exit 1
     fi
 
-    bare_version=$(echo $current_tag | sed 's/^v//')
+    bare_version="${current_tag#v}"
     zipfile_name=release-"$bare_version".zip
     containing_dir=releases/"$bare_version"
     export DEPLOY_BASE_URL=/
@@ -52,7 +54,7 @@ else
     head_sha="$(git rev-parse HEAD | cut -c -12)"
     zipfile_name=beta-g${head_sha}.zip
 
-    if [ ! -z "$PYTCH_DEPLOY_BASE_URL" ]; then
+    if [ -n "$PYTCH_DEPLOY_BASE_URL" ]; then
         containing_dir="${PYTCH_DEPLOY_BASE_URL#/}"
         if [ "$PYTCH_DEPLOY_BASE_URL" = "$containing_dir" ]; then
             >&2 echo "PYTCH_DEPLOY_BASE_URL must start with a '/' character"
@@ -67,7 +69,8 @@ else
     export PYTCH_VERSION_TAG=g$head_sha
 fi
 
-export PYTCH_DEPLOYMENT_ID=$(git rev-parse HEAD | cut -c -20)
+PYTCH_DEPLOYMENT_ID=$(git rev-parse HEAD | cut -c -20)
+export PYTCH_DEPLOYMENT_ID
 
 >&2 echo Making "$zipfile_name"
 
@@ -99,26 +102,26 @@ git submodule --quiet update \
     && (
         (
             cd pytch-vm
-            website-layer/make.sh > $LOGDIR/pytch-vm.out 2> $LOGDIR/pytch-vm.err
+            website-layer/make.sh > "$LOGDIR"/pytch-vm.out 2> "$LOGDIR"/pytch-vm.err
             >&2 echo Built pytch-vm layer
         ) &
 
         (
             cd pytch-webapp
-            website-layer/make.sh > $LOGDIR/pytch-webapp.out 2> $LOGDIR/pytch-webapp.err
+            website-layer/make.sh > "$LOGDIR"/pytch-webapp.out 2> "$LOGDIR"/pytch-webapp.err
             >&2 echo Built pytch-webapp layer
         ) &
 
         (
             cd pytch-website
-            website-layer/make.sh > $LOGDIR/pytch-website.out 2> $LOGDIR/pytch-website.err
+            website-layer/make.sh > "$LOGDIR"/pytch-website.out 2> "$LOGDIR"/pytch-website.err
             >&2 echo Built pytch-website layer
         ) &
 
         (
             # This builds the tutorials layer, hence break in pattern for out/err files.
             cd pytch-build
-            makesite/tutorials-layer.sh > $LOGDIR/pytch-tutorials.out 2> $LOGDIR/pytch-tutorials.err
+            makesite/tutorials-layer.sh > "$LOGDIR"/pytch-tutorials.out 2> "$LOGDIR"/pytch-tutorials.err
             >&2 echo Built pytch-tutorials layer
         ) &
 
@@ -126,18 +129,18 @@ git submodule --quiet update \
     ) \
     && (
         mkdir -p website-layer
-        cd website-layer
+        cd_or_fail website-layer
         rm -rf "$containing_dir"
         mkdir -p "$containing_dir"
 
         # The tutorials come from 'pytch-build'.
         for repo in pytch-vm pytch-webapp pytch-website pytch-build; do
-            unzip -q -d $containing_dir ../$repo/website-layer/layer.zip
+            unzip -q -d "$containing_dir" ../"$repo"/website-layer/layer.zip
         done
 
-        if [ ! -z $bare_version ]; then
-            >&2 echo Writing htaccess to redirect $bare_version
-            toplevel_htaccess $bare_version > "$containing_dir"/toplevel-dot-htaccess
+        if [ -n "$bare_version" ]; then
+            >&2 echo Writing htaccess to redirect "$bare_version"
+            toplevel_htaccess "$bare_version" > "$containing_dir"/toplevel-dot-htaccess
         fi
 
         rm -f "$zipfile_name"
