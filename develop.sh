@@ -4,7 +4,7 @@
 #
 # Check required (versions of) tools are available
 
-for tool in node git virtualenv python3 realpath; do
+for tool in node git virtualenv python3 realpath poetry; do
     if ! hash "$tool" 2> /dev/null; then
         echo Could not find "$tool"
         exit 1
