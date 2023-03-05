@@ -8,6 +8,9 @@ Pytch.
 v1.3.0 (2023-MM-DD)
 --------------------
 
+* Experimental: Add ability to choose from a library of media when
+  adding an asset to a project.  (Thanks to Justine Moulin for
+  contributing towards this work.)
 
 
 v1.2.0 (2023-01-16)
