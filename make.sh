@@ -114,12 +114,6 @@ git submodule --quiet update \
         ) &
 
         (
-            cd pytch-website
-            website-layer/make.sh > "$LOGDIR"/pytch-website.out 2> "$LOGDIR"/pytch-website.err
-            >&2 echo Built pytch-website layer
-        ) &
-
-        (
             # This builds the tutorials layer, hence break in pattern for out/err files.
             cd pytch-build
             makesite/tutorials-layer.sh > "$LOGDIR"/pytch-tutorials.out 2> "$LOGDIR"/pytch-tutorials.err
@@ -127,6 +121,26 @@ git submodule --quiet update \
         ) &
 
         wait
+    ) \
+    && (
+        # This is quite tangled, sorry.  Overwrite the contents of the
+        # file giving credit for the tutorial assets used in the media
+        # library.
+        "$REPO_ROOT"/pytch-build/makesite/tutorial-asset-credits.sh \
+            > "$LOGDIR"/pytch-website.out \
+            2> "$LOGDIR"/pytch-website.err
+
+        cd pytch-website
+        website-layer/make.sh >> "$LOGDIR"/pytch-website.out 2>> "$LOGDIR"/pytch-website.err
+
+        # Put back the contents of the tutorial-asset-credits file to
+        # avoid leaving unstaged changes in the medialib repo.
+        (
+            cd_or_fail ../pytch-medialib
+            git checkout -- doc/source/user/tutorials.rst
+        )
+
+        >&2 echo Built pytch-website layer
     ) \
     && (
         mkdir -p website-layer
