@@ -56,6 +56,12 @@ fi
 (
     echo "  Preparing tutorials repo ..."
 
+    (
+        echo
+        echo "# Following line added by develop.sh script of pytch-releases:"
+        echo /site-layer/
+    ) >> .git/modules/pytch-tutorials/info/exclude
+
     cd_or_fail pytch-tutorials
 
     # Ensure we have a local branch for every remote branch.
