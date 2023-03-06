@@ -5,6 +5,14 @@ This page outlines what's changed as we've released new versions of
 Pytch.
 
 
+v1.3.0 (2023-03-06)
+--------------------
+
+* Experimental: Add ability to choose from a library of media when
+  adding an asset to a project.  (Thanks to Justine Moulin for
+  contributing towards this work.)
+
+
 v1.2.0 (2023-01-16)
 --------------------
 

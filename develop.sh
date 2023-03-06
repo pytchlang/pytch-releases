@@ -4,12 +4,19 @@
 #
 # Check required (versions of) tools are available
 
-for tool in node git virtualenv python3 realpath; do
+have_all_tools=yes
+for tool in node git python3 realpath poetry; do
     if ! hash "$tool" 2> /dev/null; then
         echo Could not find "$tool"
-        exit 1
+        have_all_tools=no
     fi
 done
+
+if [ "$have_all_tools" = "no" ]; then
+    echo
+    echo "Required tool/s missing.  Please install it/them and try again."
+    exit 1
+fi
 
 node_version=$(node --version)
 if [ "$(echo "$node_version" | grep -c -E '^v14[.]')" -ne 1 ]; then
@@ -48,6 +55,12 @@ fi
 
 (
     echo "  Preparing tutorials repo ..."
+
+    (
+        echo
+        echo "# Following line added by develop.sh script of pytch-releases:"
+        echo /site-layer/
+    ) >> .git/modules/pytch-tutorials/info/exclude
 
     cd_or_fail pytch-tutorials
 
