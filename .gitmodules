@@ -13,3 +13,6 @@
 [submodule "pytch-website"]
 	path = pytch-website
 	url = ../pytch-website
+[submodule "pytch-medialib"]
+	path = pytch-medialib
+	url = ../pytch-medialib.git
