@@ -8,6 +8,7 @@ Pytch.
 v1.4.0 (2023-MM-DD)
 --------------------
 
+* Add `LICENSE.md` files to all repos.
 
 
 v1.3.0 (2023-03-06)
