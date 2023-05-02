@@ -93,6 +93,7 @@ git submodule --quiet update \
            pytch-webapp/website-layer/layer-content \
            pytch-webapp/website-layer/layer.zip
         rm -rf pytch-website/venv \
+           pytch-website/.venv \
            pytch-website/website-layer/layer-content \
            pytch-website/website-layer/layer.zip
         rm -rf pytch-build/venv \
