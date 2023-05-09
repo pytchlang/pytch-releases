@@ -5,6 +5,15 @@ This page outlines what's changed as we've released new versions of
 Pytch.
 
 
+v1.4.0 (2023-05-09)
+--------------------
+
+* Add `LICENSE.md` files to all repos.
+* Add *Trimon* tutorial.
+* Add privacy policy and terms of use.
+* Add fav-icon.
+
+
 v1.3.0 (2023-03-06)
 --------------------
 

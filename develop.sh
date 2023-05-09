@@ -119,13 +119,13 @@ echo "Initialised submodules"
     cd_or_fail pytch-build
 
     (
-        # Don't shellcheck venv/bin/activate:
-        # shellcheck disable=SC1091
-        virtualenv -p python3 venv \
-            && source venv/bin/activate \
-            && pip install --upgrade pip \
-            && pip install -r requirements_dev.txt \
-            && python setup.py install
+        # Poetry seems to want a keyring even if doing an operation which
+        # doesn't need one.  Tell it to use a null one.
+        PYTHON_KEYRING_BACKEND=keyring.backends.null.Keyring
+        export PYTHON_KEYRING_BACKEND
+
+        poetry env use -q python3
+        poetry install
     ) > "$REPO_ROOT"/pytch-build-preparation.out 2> "$REPO_ROOT"/pytch-build-preparation.err
 
     echo "Prepared build tools"
