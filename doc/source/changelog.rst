@@ -5,6 +5,12 @@ This page outlines what's changed as we've released new versions of
 Pytch.
 
 
+v1.4.1 (2023-05-09)
+--------------------
+
+* Gather *Trimon* tutorial images into groups.
+
+
 v1.4.0 (2023-05-09)
 --------------------
 
