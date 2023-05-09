@@ -11,6 +11,7 @@ v1.4.0 (2023-MM-DD)
 * Add `LICENSE.md` files to all repos.
 * Add *Trimon* tutorial.
 * Add privacy policy and terms of use.
+* Add fav-icon.
 
 
 v1.3.0 (2023-03-06)
