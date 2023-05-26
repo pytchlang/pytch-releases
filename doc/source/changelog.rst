@@ -9,6 +9,7 @@ v1.5.0 (2023-MM-DD)
 --------------------
 
 * Fix bug whereby ``self.say_for_seconds("", 1)`` raised error.
+* Update developer documentation.
 
 
 v1.4.1 (2023-05-09)
