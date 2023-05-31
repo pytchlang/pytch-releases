@@ -5,6 +5,14 @@ This page outlines what's changed as we've released new versions of
 Pytch.
 
 
+v1.5.0 (2023-05-31)
+--------------------
+
+* Fix bug whereby ``self.say_for_seconds("", 1)`` raised error.
+* Update developer documentation.
+* Add ability to save/load to/from Google Drive.
+
+
 v1.4.1 (2023-05-09)
 --------------------
 

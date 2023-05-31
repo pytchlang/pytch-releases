@@ -5,7 +5,7 @@
 # Check required (versions of) tools are available
 
 have_all_tools=yes
-for tool in node git python3 realpath poetry; do
+for tool in node git python python3 realpath poetry; do
     if ! hash "$tool" 2> /dev/null; then
         echo Could not find "$tool"
         have_all_tools=no
@@ -150,6 +150,8 @@ echo "Built all"
 echo "See *-preparation.{out,err} for details"
 echo
 echo "You should now be able to run"
+echo
 echo "    ./pytch-build/makesite/local-server/dev-server.sh"
+echo
 echo "to launch a local development server"
 echo
