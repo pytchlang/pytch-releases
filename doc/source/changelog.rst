@@ -5,7 +5,7 @@ This page outlines what's changed as we've released new versions of
 Pytch.
 
 
-v1.5.0 (2023-MM-DD)
+v1.5.0 (2023-05-31)
 --------------------
 
 * Fix bug whereby ``self.say_for_seconds("", 1)`` raised error.
