@@ -5,6 +5,12 @@ This page outlines what's changed as we've released new versions of
 Pytch.
 
 
+v1.5.1 (2023-06-01)
+--------------------
+
+* Allow import of Google Drive zipfiles uploaded from Windows.
+
+
 v1.5.0 (2023-05-31)
 --------------------
 
