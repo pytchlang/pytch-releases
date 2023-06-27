@@ -8,6 +8,7 @@ Pytch.
 v1.6.0 (2023-MM-DD)
 --------------------
 
+* Redesign some internals; no user-visible changes.
 
 
 v1.5.1 (2023-06-01)
