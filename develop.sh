@@ -138,6 +138,12 @@ echo "Initialised submodules"
 
     (
         npm install
+        if [ -e src/.env ]; then
+            echo "File src/.env exists; leaving it alone"
+        else
+            echo "Creating src/.env appropriate to local development"
+            cp src/dot-env-local-development src/.env
+        fi
     ) > "$REPO_ROOT"/pytch-webapp-preparation.out 2> "$REPO_ROOT"/pytch-webapp-preparation.err
 
     echo "Prepared webapp"
