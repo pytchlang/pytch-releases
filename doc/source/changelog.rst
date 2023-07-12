@@ -8,7 +8,9 @@ Pytch.
 v1.7.0 (2023-MM-DD)
 --------------------
 
-
+* Add feature to help users find coordinates on the stage.
+* Add ability to share a link to a particular tutorial.
+* Update many internal dependencies.
 
 v1.6.0 (2023-06-27)
 --------------------
