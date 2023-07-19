@@ -5,7 +5,7 @@ This page outlines what's changed as we've released new versions of
 Pytch.
 
 
-v1.7.0 (2023-MM-DD)
+v1.7.0 (2023-07-19)
 --------------------
 
 * Add feature to help users find coordinates on the stage.
