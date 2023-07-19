@@ -24,12 +24,66 @@ if [ "$(git status --ignore-submodules=none --porcelain | wc -l)" -ne 0 ]; then
     exit 1
 fi
 
+# Surely there's a better way to tell whether we have a poetry env
+# activated by mistake?  Is presence of VIRTUAL_ENV env.var reliable?
+
+if ! poetry_env_test_dir=$(mktemp -d); then
+    >&2 echo "Could not make temporary directory for poetry env test"
+    exit 1
+fi
+(
+    cd "$poetry_env_test_dir" || exit 2
+    cat > pyproject.toml <<EOF
+[tool.poetry]
+name = "x"
+version = "0.0.1"
+description = "x"
+homepage = ""
+authors = []
+packages = []
+EOF
+    poetry env info --path > /dev/null
+)
+poetry_env_active=$?
+
+if [ "$poetry_env_active" = "2" ]; then
+    >&2 echo "Problem setting up poetry test:"
+    >&2 echo "could not cd into $poetry_env_test_dir"
+    exit 1
+fi
+
+rm -r "$poetry_env_test_dir"
+
+if [ "$poetry_env_active" = "0" ]; then
+    >&2 echo "A poetry environment is active;"
+    >&2 echo "please deactivate it and try again"
+    exit 1
+fi
+
 current_branch="$(git rev-parse --abbrev-ref HEAD)"
 
 if [ "$current_branch" = releases ]; then
     current_tag="$(git tag --points-at)"
     if [ -z "$current_tag" ]; then
         >&2 echo No tag found pointing to HEAD on releases
+        exit 1
+    fi
+
+    webapp_dotenv=pytch-webapp/src/.env
+    if ! [ -e "$webapp_dotenv" ]; then
+        >&2 echo No "$webapp_dotenv" file
+        exit 1
+    fi
+
+    client_id_hash=$(
+        grep VITE_GOOGLE_CLIENT_ID "$webapp_dotenv" \
+            | cut -d= -f2 \
+            | sha256sum \
+            | cut -c-32
+    )
+
+    if [ "$client_id_hash" != 812a9f221f3c3b2b19877e90f2b6ad46 ]; then
+        >&2 echo VITE_GOOGLE_CLIENT_ID not as expected in "$webapp_dotenv"
         exit 1
     fi
 
