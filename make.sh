@@ -69,6 +69,24 @@ if [ "$current_branch" = releases ]; then
         exit 1
     fi
 
+    webapp_dotenv=pytch-webapp/src/.env
+    if ! [ -e "$webapp_dotenv" ]; then
+        >&2 echo No "$webapp_dotenv" file
+        exit 1
+    fi
+
+    client_id_hash=$(
+        grep VITE_GOOGLE_CLIENT_ID "$webapp_dotenv" \
+            | cut -d= -f2 \
+            | sha256sum \
+            | cut -c-32
+    )
+
+    if [ "$client_id_hash" != 812a9f221f3c3b2b19877e90f2b6ad46 ]; then
+        >&2 echo VITE_GOOGLE_CLIENT_ID not as expected in "$webapp_dotenv"
+        exit 1
+    fi
+
     current_tutorials_branch="$(cd pytch-tutorials && git rev-parse --abbrev-ref HEAD)"
     if [ "$current_tutorials_branch" != releases ]; then
         >&2 echo Top level repo is on '"releases"' branch but tutorials is not
