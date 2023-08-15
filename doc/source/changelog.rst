@@ -17,6 +17,7 @@ v1.7.0 (2023-07-19)
 * Add ability to share a link to a particular tutorial.
 * Update many internal dependencies.
 
+
 v1.6.0 (2023-06-27)
 --------------------
 
@@ -46,7 +47,7 @@ v1.4.1 (2023-05-09)
 v1.4.0 (2023-05-09)
 --------------------
 
-* Add `LICENSE.md` files to all repos.
+* Add ``LICENSE.md`` files to all repos.
 * Add *Trimon* tutorial.
 * Add privacy policy and terms of use.
 * Add fav-icon.
