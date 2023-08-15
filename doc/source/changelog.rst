@@ -5,7 +5,7 @@ This page outlines what's changed as we've released new versions of
 Pytch.
 
 
-v1.8.0 (2023-MM-DD)
+v1.8.0 (2023-08-15)
 --------------------
 
 * Record last-modified time for projects, and show
