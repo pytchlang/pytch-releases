@@ -8,6 +8,9 @@ Pytch.
 v1.8.0 (2023-MM-DD)
 --------------------
 
+* Record last-modified time for projects, and show
+  most-recently-modified projects first in *My projects* list.
+* (Redesign some internals.)
 
 
 v1.7.0 (2023-07-19)
