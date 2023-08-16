@@ -5,12 +5,21 @@ This page outlines what's changed as we've released new versions of
 Pytch.
 
 
+v1.8.0 (2023-08-15)
+--------------------
+
+* Record last-modified time for projects, and show
+  most-recently-modified projects first in *My projects* list.
+* (Redesign some internals.)
+
+
 v1.7.0 (2023-07-19)
 --------------------
 
 * Add feature to help users find coordinates on the stage.
 * Add ability to share a link to a particular tutorial.
 * Update many internal dependencies.
+
 
 v1.6.0 (2023-06-27)
 --------------------
@@ -41,7 +50,7 @@ v1.4.1 (2023-05-09)
 v1.4.0 (2023-05-09)
 --------------------
 
-* Add `LICENSE.md` files to all repos.
+* Add ``LICENSE.md`` files to all repos.
 * Add *Trimon* tutorial.
 * Add privacy policy and terms of use.
 * Add fav-icon.
