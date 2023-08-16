@@ -16,3 +16,6 @@
 [submodule "pytch-medialib"]
 	path = pytch-medialib
 	url = ../pytch-medialib.git
+[submodule "pytch-specimens"]
+	path = pytch-specimens
+	url = ../pytch-specimens
