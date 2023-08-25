@@ -8,6 +8,8 @@ Pytch.
 v1.9.0 (2023-MM-DD)
 --------------------
 
+* Be more helpful when getting filename from user for downloading or
+  exporting project zipfile.
 
 
 v1.8.0 (2023-08-15)
