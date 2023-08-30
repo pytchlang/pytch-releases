@@ -5,6 +5,14 @@ This page outlines what's changed as we've released new versions of
 Pytch.
 
 
+v1.9.0 (2023-08-30)
+--------------------
+
+* Be more helpful when getting filename from user for downloading or
+  exporting project zipfile.
+* Add ability to create projects linked to a "specimen".
+
+
 v1.8.0 (2023-08-15)
 --------------------
 
