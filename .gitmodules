@@ -15,7 +15,7 @@
 	url = ../pytch-website
 [submodule "pytch-medialib"]
 	path = pytch-medialib
-	url = ../pytch-medialib.git
+	url = ../pytch-medialib
 [submodule "pytch-specimens"]
 	path = pytch-specimens
 	url = ../pytch-specimens
