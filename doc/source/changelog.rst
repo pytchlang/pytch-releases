@@ -8,6 +8,7 @@ Pytch.
 v1.10.0 (2023-MM-DD)
 --------------------
 
+* Release v1 of specimens in support of CSLinc lesson plans.
 
 
 v1.9.0 (2023-08-30)
