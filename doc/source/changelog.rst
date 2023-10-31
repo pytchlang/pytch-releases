@@ -5,10 +5,11 @@ This page outlines what's changed as we've released new versions of
 Pytch.
 
 
-v1.10.0 (2023-MM-DD)
---------------------
+v1.10.0 beta (2023-MM-DD)
+-------------------------
 
 * Release v1 of specimens in support of CSLinc lesson plans.
+* Add "script-by-script" editor.
 
 
 v1.9.0 (2023-08-30)
