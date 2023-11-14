@@ -9,6 +9,7 @@ v1.10.0 (2023-MM-DD)
 --------------------
 
 * Release v1 of specimens in support of CSLinc lesson plans.
+* Do not report unreachable code as a ``SyntaxError``.
 
 
 v1.9.0 (2023-08-30)
