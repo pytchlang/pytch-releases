@@ -5,6 +5,15 @@ This page outlines what's changed as we've released new versions of
 Pytch.
 
 
+v1.10.0 (2023-11-14)
+--------------------
+
+* Release v1 of specimens in support of CSLinc lesson plans.
+* Do not report unreachable code as a ``SyntaxError``.
+* Experimental: Add ability to copy syntax-highlighted code from
+  editor with control-shift-C.
+
+
 v1.9.0 (2023-08-30)
 --------------------
 
