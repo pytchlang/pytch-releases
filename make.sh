@@ -38,7 +38,7 @@ fi
 name = "x"
 version = "0.0.1"
 description = "x"
-homepage = ""
+homepage = "https://example.com/"
 authors = []
 packages = []
 EOF
