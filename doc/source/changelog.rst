@@ -5,7 +5,7 @@ This page outlines what's changed as we've released new versions of
 Pytch.
 
 
-v1.11.0 (2023-MM-DD)
+v1.11.0 (2023-12-21)
 --------------------
 
 * Update privacy policy to mention Apache logs.
