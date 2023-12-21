@@ -8,6 +8,7 @@ Pytch.
 v1.11.0 (2023-MM-DD)
 --------------------
 
+* Update privacy policy to mention Apache logs.
 
 
 v1.10.0 (2023-11-14)
