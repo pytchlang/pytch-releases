@@ -10,6 +10,7 @@ v1.11.0 (2023-MM-DD)
 
 * Update privacy policy to mention Apache logs.
 * Update and streamline front page.
+* Add minimal basic anonymous usage logging.
 
 
 v1.10.0 (2023-11-14)
