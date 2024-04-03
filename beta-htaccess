@@ -1,0 +1,22 @@
+ErrorDocument 401 "Error"
+ErrorDocument 403 "Error"
+
+# Don't execute those .py files!
+RemoveHandler .py
+
+<IfModule mod_rewrite.c>
+
+RewriteEngine On
+RewriteBase /
+
+RewriteCond %{REQUEST_URI} ^/(stats|failed_auth\.html).*$ [NC]
+RewriteRule . - [L]
+
+# Redirect all http requests to https
+RewriteCond %{HTTPS} !=on
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301,NE]
+
+RewriteRule ^$ app/ [R,L]
+RewriteRule ^(app|doc|tutorials|skulpt|medialib)/(.*)$ beta/g12341234/$1/$2 [R=307,L]
+
+</IfModule>
