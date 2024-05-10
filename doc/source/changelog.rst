@@ -5,6 +5,16 @@ This page outlines what's changed as we've released new versions of
 Pytch.
 
 
+v2.1.0 (2024-05-10)
+--------------------
+
+* Add "standalone play demo" feature.
+* Improve cues for usage of "task done" checkboxes in per-method
+  lessons.
+* Fix minor bug whereby newly added scripts for hat blocks not
+  requiring arguments (e.g., green-flag) did not get editor focus.
+
+
 v2.0.0 (2024-04-03)
 -------------------
 
