@@ -5,6 +5,13 @@ This page outlines what's changed as we've released new versions of
 Pytch.
 
 
+v2.2.0 (2024-05-30)
+--------------------
+
+* Fix bug whereby using browser's "back" button left some modals still
+  visible, sometimes leading to crashes.
+* Add ability to use ``ui-v2`` query param in URL to choose the V2 UI.
+
 v2.1.0 (2024-05-10)
 --------------------
 
@@ -21,7 +28,7 @@ v2.0.0 (2024-04-03)
 * Add new *script-by-script* editing mode and tutorial.
 * Update styling.
 * Handle capital/lower-case letters more sensibly for when-key-pressed
-  scripts and use of `key_pressed()` function.
+  scripts and use of ``key_pressed()`` function.
 
 
 v1.11.1 (2023-12-21)
