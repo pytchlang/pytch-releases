@@ -5,6 +5,14 @@ cd_or_fail() { cd "$1" || exit 1; }
 REPO_ROOT="$(dirname "$(realpath "$0")")"
 cd_or_fail "$REPO_ROOT"
 
+# Do this now (even though will also be checked in webapp build
+# script) to avoid annoying delay in discovering problem.
+node_version=$(node --version)
+if [ "$(echo "$node_version" | grep -c -E '^v18[.]')" -ne 1 ]; then
+    >&2 echo Need node v18 but have "$node_version"
+    exit 1
+fi
+
 # Rough test that submodules have been init'd correctly:
 if [ ! -x pytch-vm/website-layer/make.sh ]; then
     (

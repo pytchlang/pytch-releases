@@ -19,3 +19,6 @@
 [submodule "pytch-specimens"]
 	path = pytch-specimens
 	url = ../pytch-specimens
+[submodule "pytch-static-blobs"]
+	path = pytch-static-blobs
+	url = ../pytch-static-blobs

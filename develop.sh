@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -e
 
 ########################################################################
 #
@@ -27,10 +27,8 @@ fi
 
 ########################################################################
 
-cd_or_fail() { cd "$1" || exit 1; }
-
 REPO_ROOT="$(dirname "$(realpath "$0")")"
-cd_or_fail "$REPO_ROOT"
+cd "$REPO_ROOT"
 
 # Bail if it looks like we've already run.
 if [ -e pytch-vm/src ] || [ -e pytch-webapp/src ]; then
@@ -62,7 +60,7 @@ fi
         echo /site-layer/
     ) >> .git/modules/pytch-tutorials/info/exclude
 
-    cd_or_fail pytch-tutorials
+    cd pytch-tutorials
 
     # Ensure we have a local branch for every remote branch.
 
@@ -85,7 +83,7 @@ fi
 # shellcheck disable=SC2016
 for m in $(git submodule foreach --quiet 'echo $name'); do
     (
-        cd_or_fail "$m"
+        cd "$m"
         branch=$(git branch --no-column --format="%(refname:short)" --points-at "$(git rev-parse HEAD)" \
                      | grep -v "HEAD detached" \
                      | head -1)
@@ -102,12 +100,12 @@ echo "Initialised submodules"
 (
     echo "Preparing VM ..."
 
-    cd_or_fail pytch-vm
+    cd pytch-vm
 
     (
         npm install
         npm run devbuild
-        ( cd_or_fail dist; ln -s skulpt.js skulpt.min.js )
+        ( cd dist; ln -s skulpt.js skulpt.min.js )
     ) > "$REPO_ROOT"/pytch-vm-preparation.out 2> "$REPO_ROOT"/pytch-vm-preparation.err
 
     echo "Prepared VM"
@@ -116,7 +114,7 @@ echo "Initialised submodules"
 (
     echo "Preparing build tools ..."
 
-    cd_or_fail pytch-build
+    cd pytch-build
 
     (
         # Poetry seems to want a keyring even if doing an operation which
@@ -134,7 +132,7 @@ echo "Initialised submodules"
 (
     echo "Preparing webapp ..."
 
-    cd_or_fail pytch-webapp
+    cd pytch-webapp
 
     (
         npm install

@@ -5,6 +5,15 @@ This page outlines what's changed as we've released new versions of
 Pytch.
 
 
+v2.4.0 (2024-09-10)
+--------------------
+
+* Check that ``create_clone_of()`` has been given a Pytch sprite.
+* Update internal development tools.
+* New more mobile-friendly front page.  Thanks to Duncan Wallace for
+  substantial contributions to this work.
+
+
 v2.3.0 (2024-07-10)
 --------------------
 
