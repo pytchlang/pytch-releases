@@ -5,15 +5,25 @@ This page outlines what's changed as we've released new versions of
 Pytch.
 
 
+v2.6.0 (2024-10-21)
+-------------------
+
+* Improve developer documentation and tools.
+* Support script-by-script lesson specimens.
+* Add script-by-script specimens for existing lesson plans.
+* Fix minor bug with project-from-specimen behaviour.
+* Fix bugs with ordering of assets in script-by-script projects.
+
+
 v2.5.0 (2024-09-16)
---------------------
+-------------------
 
 * Fix errors in script-by-script help sidebar content.
 * Improve contrast and colours in script-by-script IDE.
 
 
 v2.4.0 (2024-09-10)
---------------------
+-------------------
 
 * Check that ``create_clone_of()`` has been given a Pytch sprite.
 * Update internal development tools.
@@ -22,7 +32,7 @@ v2.4.0 (2024-09-10)
 
 
 v2.3.0 (2024-07-10)
---------------------
+-------------------
 
 * Make "Add something" button background only as big as needed.
 * Check that ``wait_seconds()`` has been given a number.
@@ -37,14 +47,15 @@ v2.3.0 (2024-07-10)
 
 
 v2.2.0 (2024-05-30)
---------------------
+-------------------
 
 * Fix bug whereby using browser's "back" button left some modals still
   visible, sometimes leading to crashes.
 * Add ability to use ``ui-v2`` query param in URL to choose the V2 UI.
 
+
 v2.1.0 (2024-05-10)
---------------------
+-------------------
 
 * Add "standalone play demo" feature.
 * Improve cues for usage of "task done" checkboxes in per-method
