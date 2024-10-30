@@ -212,7 +212,22 @@ git submodule --quiet update \
         mkdir -p "$containing_dir"
 
         # The tutorials come from 'pytch-build'.
-        for repo in pytch-vm pytch-webapp pytch-website pytch-build; do
+        contributing_repos=(pytch-vm pytch-webapp pytch-website pytch-build)
+
+        all_zips_present=yes
+        for repo in "${contributing_repos[@]}"; do
+            layer_zip="$repo"/website-layer/layer.zip
+            if [ ! -e ../"$layer_zip" ]; then
+                >&2 echo Zipfile "$layer_zip" missing
+                all_zips_present=no
+            fi
+        done
+
+        if [ "$all_zips_present" != yes ]; then
+            exit 1
+        fi
+
+        for repo in "${contributing_repos[@]}"; do
             unzip -q -d "$containing_dir" ../"$repo"/website-layer/layer.zip
         done
 

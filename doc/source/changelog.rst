@@ -5,6 +5,19 @@ This page outlines what's changed as we've released new versions of
 Pytch.
 
 
+v2.7.0 (2024-10-30)
+-------------------
+
+* Improve robustness of build process.
+* Support more kinds of learner tasks in script-by-script tutorials.
+* Make minor accessibility and related improvements.
+* Improve presentation of learner tasks in script-by-script tutorials.
+* Allow users to duplicate a script.
+* Try to keep cursor line visible when navigating script-by-script
+  code with keyboard.
+* Document ``random.uniform()`` in help sidebar.
+
+
 v2.6.0 (2024-10-21)
 -------------------
 
