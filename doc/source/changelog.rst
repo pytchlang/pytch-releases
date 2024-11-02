@@ -5,6 +5,12 @@ This page outlines what's changed as we've released new versions of
 Pytch.
 
 
+v2.7.1 (2024-11-02)
+-------------------
+
+* Fix layout bug with play/stop buttons in standalone demos.
+
+
 v2.7.0 (2024-10-30)
 -------------------
 
