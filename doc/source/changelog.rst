@@ -5,6 +5,14 @@ This page outlines what's changed as we've released new versions of
 Pytch.
 
 
+v2.8.1 (2024-12-11)
+-------------------
+
+* Fix minor rendering bugs in the "progress trail" for
+  script-by-script tutorials.
+* Document ``random.choice()`` in help sidebar.
+
+
 v2.8.0 (2024-11-19)
 -------------------
 
