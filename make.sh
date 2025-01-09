@@ -13,6 +13,13 @@ if [ "$(echo "$node_version" | grep -c -E '^v18[.]')" -ne 1 ]; then
     exit 1
 fi
 
+# Various other pieces rely on this:
+poetry_version=$(poetry --version)
+if [ "$(echo "$poetry_version" | grep -c -E 'version 2[.]')" -ne 1 ]; then
+    >&2 echo Need Poetry v2 but have "$poetry_version"
+    exit 1
+fi
+
 # Rough test that submodules have been init'd correctly:
 if [ ! -x pytch-vm/website-layer/make.sh ]; then
     (

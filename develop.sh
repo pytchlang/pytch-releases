@@ -24,6 +24,12 @@ if [ "$(echo "$node_version" | grep -c -E '^v18[.]')" -ne 1 ]; then
     exit 1
 fi
 
+poetry_version=$(poetry --version)
+if [ "$(echo "$poetry_version" | grep -c -E 'version 2[.]')" -ne 1 ]; then
+    echo Need Poetry v2 but have "$poetry_version"
+    exit 1
+fi
+
 
 ########################################################################
 

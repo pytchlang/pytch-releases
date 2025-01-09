@@ -5,6 +5,19 @@ This page outlines what's changed as we've released new versions of
 Pytch.
 
 
+v2.9.0 (2025-01-09)
+-------------------
+
+* Add tool to write skeleton of a new tutorial.
+* Improve help sidebar content for ``show_variable()`` and
+  ``hide_variable()``.
+* Improve contrast and layout of activity bar and script-by-script
+  tutorials.
+* Default to *v2* of interface (with script-by-script features turned
+  on).
+* Add five new script-by-script tutorials and update another.
+
+
 v2.8.1 (2024-12-11)
 -------------------
 
