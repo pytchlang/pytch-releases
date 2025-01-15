@@ -8,6 +8,8 @@ Pytch.
 vM.m.p (YYYY-MM-DD)
 -------------------
 
+* Redesign "one big program" IDE to match layout of "script-by-script"
+  IDE.
 
 
 v2.9.0 (2025-01-09)
