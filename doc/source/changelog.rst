@@ -8,6 +8,7 @@ Pytch.
 vM.m.p (YYYY-MM-DD)
 -------------------
 
+* Improve styling slightly.
 
 
 v3.0.0 (2025-02-22)
