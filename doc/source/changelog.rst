@@ -10,6 +10,7 @@ vM.m.p (YYYY-MM-DD)
 
 * Redesign "one big program" IDE to match layout of "script-by-script"
   IDE.
+* Make minor adjustments and fixes to "one big program" tutorials.
 
 
 v2.9.0 (2025-01-09)
