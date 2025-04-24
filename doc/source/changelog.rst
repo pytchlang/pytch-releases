@@ -5,6 +5,13 @@ This page outlines what's changed as we've released new versions of
 Pytch.
 
 
+v3.0.1 (2025-04-24)
+-------------------
+
+* Improve styling slightly.
+* Update funder logo and links on front page.
+
+
 v3.0.0 (2025-02-22)
 -------------------
 
