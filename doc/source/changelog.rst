@@ -9,6 +9,7 @@ vM.m.p (YYYY-MM-DD)
 -------------------
 
 * Improve styling slightly.
+* Update funder logo and links on front page.
 
 
 v3.0.0 (2025-02-22)
