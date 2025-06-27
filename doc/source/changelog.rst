@@ -9,7 +9,7 @@ v3.0.2 (2025-06-27)
 -------------------
 
 * Experimental: Allow ``self.`` as well as ``pytch.`` for various
-  functions.
+  functions.  (Thanks to Elouan Bourdais for contributing this work.)
 * Try to consistently run projects at 60 frames per second.
 
 
