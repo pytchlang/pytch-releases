@@ -5,6 +5,14 @@ This page outlines what's changed as we've released new versions of
 Pytch.
 
 
+v3.0.2 (2025-06-27)
+-------------------
+
+* Experimental: Allow ``self.`` as well as ``pytch.`` for various
+  functions.
+* Try to consistently run projects at 60 frames per second.
+
+
 v3.0.1 (2025-04-24)
 -------------------
 
