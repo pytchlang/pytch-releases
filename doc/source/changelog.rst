@@ -10,6 +10,7 @@ vM.m.p (YYYY-MM-DD)
 
 * Experimental: Allow ``self.`` as well as ``pytch.`` for various
   functions.
+* Try to consistently run projects at 60 frames per second.
 
 
 v3.0.1 (2025-04-24)
