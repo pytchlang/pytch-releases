@@ -8,6 +8,8 @@ Pytch.
 vM.m.p (YYYY-MM-DD)
 -------------------
 
+* Experimental: Allow ``self.`` as well as ``pytch.`` for various
+  functions.
 
 
 v3.0.1 (2025-04-24)
