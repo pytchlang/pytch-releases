@@ -10,6 +10,8 @@ vM.m.p (YYYY-MM-DD)
 
 * Clarify some wording in the *Shoot the Fruit* tutorial.
 * Check that ``touching()`` has been given a Pytch sprite.
+* Add page to user documentation about downloading or exporting
+  projects.
 
 
 v3.0.2 (2025-06-27)
