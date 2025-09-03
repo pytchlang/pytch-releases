@@ -5,11 +5,20 @@ This page outlines what's changed as we've released new versions of
 Pytch.
 
 
+v3.1.0 (2025-09-03)
+-------------------
+
+* Clarify some wording in the *Shoot the Fruit* tutorial.
+* Check that ``touching()`` has been given a Pytch sprite.
+* Add page to user documentation about downloading or exporting
+  projects.
+
+
 v3.0.2 (2025-06-27)
 -------------------
 
 * Experimental: Allow ``self.`` as well as ``pytch.`` for various
-  functions.
+  functions.  (Thanks to Elouan Bourdais for contributing this work.)
 * Try to consistently run projects at 60 frames per second.
 
 
@@ -96,8 +105,8 @@ v2.4.0 (2024-09-10)
 
 * Check that ``create_clone_of()`` has been given a Pytch sprite.
 * Update internal development tools.
-* New more mobile-friendly front page.  Thanks to Duncan Wallace for
-  substantial contributions to this work.
+* New more mobile-friendly front page.  (Thanks to Duncan Wallace for
+  substantial contributions to this work.)
 
 
 v2.3.0 (2024-07-10)
