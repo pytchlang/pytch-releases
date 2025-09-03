@@ -8,6 +8,8 @@ Pytch.
 vM.m.p (YYYY-MM-DD)
 -------------------
 
+* Clarify some wording in the *Shoot the Fruit* tutorial.
+* Check that ``touching()`` has been given a Pytch sprite.
 
 
 v3.0.2 (2025-06-27)
