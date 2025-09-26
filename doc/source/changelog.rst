@@ -8,6 +8,12 @@ Pytch.
 vM.m.p (YYYY-MM-DD)
 -------------------
 
+* Add mouse functionality.  Sprites now have ``mouse_x``, ``mouse_y``,
+  ``mouse_down``, ``touching_mouse``, and ``distance_to_mouse``
+  properties, and ``go_to_mouse()``, ``glide_to_mouse()``, and
+  ``point_towards_mouse()`` methods.  The Stage also has the first
+  three properties.  (Thanks to Elouan Bourdais for contributing this
+  work.)
 
 
 v3.1.0 (2025-09-03)
