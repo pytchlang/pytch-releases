@@ -5,7 +5,7 @@ This page outlines what's changed as we've released new versions of
 Pytch.
 
 
-vM.m.p (YYYY-MM-DD)
+v3.2.0 (2025-09-26)
 -------------------
 
 * Add mouse functionality.  Sprites now have ``mouse_x``, ``mouse_y``,
