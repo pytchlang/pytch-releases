@@ -14,6 +14,7 @@ vM.m.p (YYYY-MM-DD)
   ``point_towards_mouse()`` methods.  The Stage also has the first
   three properties.  (Thanks to Elouan Bourdais for contributing this
   work.)
+* Improve auto-complete behaviour for script-by-script projects.
 
 
 v3.1.0 (2025-09-03)
