@@ -5,6 +5,18 @@ This page outlines what's changed as we've released new versions of
 Pytch.
 
 
+v3.2.0 (2025-09-26)
+-------------------
+
+* Add mouse functionality.  Sprites now have ``mouse_x``, ``mouse_y``,
+  ``mouse_down``, ``touching_mouse``, and ``distance_to_mouse``
+  properties, and ``go_to_mouse()``, ``glide_to_mouse()``, and
+  ``point_towards_mouse()`` methods.  The Stage also has the first
+  three properties.  (Thanks to Elouan Bourdais for contributing this
+  work.)
+* Improve auto-complete behaviour for script-by-script projects.
+
+
 v3.1.0 (2025-09-03)
 -------------------
 
