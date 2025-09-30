@@ -8,6 +8,7 @@ Pytch.
 vM.m.p (YYYY-MM-DD)
 -------------------
 
+* Fix minor layout problem in "suggested demo" card.
 
 
 v3.2.0 (2025-09-26)
