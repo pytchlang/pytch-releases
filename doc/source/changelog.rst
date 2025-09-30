@@ -5,6 +5,12 @@ This page outlines what's changed as we've released new versions of
 Pytch.
 
 
+v3.2.1 (2025-09-30)
+-------------------
+
+* Fix minor layout problem in "suggested demo" card.
+
+
 v3.2.0 (2025-09-26)
 -------------------
 
