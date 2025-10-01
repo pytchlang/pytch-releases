@@ -9,6 +9,8 @@ vM.m.p (YYYY-MM-DD)
 -------------------
 
 * Fix timing bug in a lesson specimen.
+* Fix bug whereby click coordinates were not computed correctly when
+  playing a standalone demo.
 
 
 v3.2.1 (2025-09-30)
