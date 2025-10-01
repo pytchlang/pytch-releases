@@ -5,6 +5,14 @@ This page outlines what's changed as we've released new versions of
 Pytch.
 
 
+v3.2.2 (2025-10-01)
+-------------------
+
+* Fix timing bug in a lesson specimen.
+* Fix bug whereby click coordinates were not computed correctly when
+  playing a standalone demo.
+
+
 v3.2.1 (2025-09-30)
 -------------------
 
