@@ -5,7 +5,7 @@ This page outlines what's changed as we've released new versions of
 Pytch.
 
 
-vM.m.p (YYYY-MM-DD)
+v3.2.2 (2025-10-01)
 -------------------
 
 * Fix timing bug in a lesson specimen.
