@@ -8,6 +8,7 @@ Pytch.
 vM.m.p (YYYY-MM-DD)
 -------------------
 
+* Fix timing bug in a lesson specimen.
 
 
 v3.2.1 (2025-09-30)
