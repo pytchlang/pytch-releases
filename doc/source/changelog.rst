@@ -5,6 +5,13 @@ This page outlines what's changed as we've released new versions of
 Pytch.
 
 
+v3.3.0 (2025-10-15)
+-------------------
+
+* Update *Shoot the Fruit* tutorial to use ``self.`` calls.
+* Update help sidebar to refer to ``self.`` calls.
+
+
 v3.2.2 (2025-10-01)
 -------------------
 
