@@ -5,7 +5,7 @@ This page outlines what's changed as we've released new versions of
 Pytch.
 
 
-vM.m.p (YYYY-MM-DD)
+v3.3.0 (2025-10-15)
 -------------------
 
 * Update *Shoot the Fruit* tutorial to use ``self.`` calls.
