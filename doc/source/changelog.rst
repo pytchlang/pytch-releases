@@ -9,6 +9,7 @@ vM.m.p (YYYY-MM-DD)
 -------------------
 
 * Update *Shoot the Fruit* tutorial to use ``self.`` calls.
+* Update help sidebar to refer to ``self.`` calls.
 
 
 v3.2.2 (2025-10-01)
