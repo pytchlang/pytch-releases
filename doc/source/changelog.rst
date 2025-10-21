@@ -8,6 +8,8 @@ Pytch.
 vM.m.p (YYYY-MM-DD)
 -------------------
 
+* Update documentation to describe preferred ``self.`` versions of
+  what used to be ``pytch.`` functions.
 
 
 v3.3.0 (2025-10-15)
