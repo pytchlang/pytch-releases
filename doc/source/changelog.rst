@@ -5,7 +5,7 @@ This page outlines what's changed as we've released new versions of
 Pytch.
 
 
-vM.m.p (YYYY-MM-DD)
+v3.4.0 (2025-10-21)
 -------------------
 
 * Update documentation to describe preferred ``self.`` versions of
