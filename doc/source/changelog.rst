@@ -5,6 +5,12 @@ This page outlines what's changed as we've released new versions of
 Pytch.
 
 
+v3.5.1 (2025-11-27)
+-------------------
+
+* Fix two minor display and layout bugs.
+
+
 v3.5.0 (2025-11-27)
 -------------------
 
