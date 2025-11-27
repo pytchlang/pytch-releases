@@ -5,7 +5,7 @@ This page outlines what's changed as we've released new versions of
 Pytch.
 
 
-vM.m.p (YYYY-MM-DD)
+v3.5.0 (2025-11-27)
 -------------------
 
 * Add ``self.go_to_random_position()`` method for Sprites, and
