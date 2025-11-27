@@ -5,6 +5,24 @@ This page outlines what's changed as we've released new versions of
 Pytch.
 
 
+v3.5.0 (2025-11-27)
+-------------------
+
+* Add ``self.go_to_random_position()`` method for Sprites, and
+  simplify the script-by-script *Shoot the Fruit* tutorial to use it.
+* Add sidebar help for keyboard navigation.
+* By default, when following a tutorial, restrict media library to
+  just media recommended for that tutorial.
+* Insert ``()``\ s when autocompleting methods, leaving cursor between
+  them.
+* Save "linked content" information (such as which tutorial a project
+  is following) when downloading or exporting, and optionally when
+  making a copy of, a project.
+* Improve accessibility by only using "alert" elements when
+  semantically justified.
+* Update many internal dependencies.
+
+
 v3.4.0 (2025-10-21)
 -------------------
 
