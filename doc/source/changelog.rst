@@ -5,6 +5,13 @@ This page outlines what's changed as we've released new versions of
 Pytch.
 
 
+v3.5.2 (2025-12-05)
+-------------------
+
+* Handle project zipfiles with graphics or sounds having uppercase
+  filename extension.
+
+
 v3.5.1 (2025-11-27)
 -------------------
 
