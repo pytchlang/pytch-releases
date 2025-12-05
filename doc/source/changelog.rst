@@ -5,7 +5,7 @@ This page outlines what's changed as we've released new versions of
 Pytch.
 
 
-vM.m.p (YYYY-MM-DD)
+v3.5.2 (2025-12-05)
 -------------------
 
 * Handle project zipfiles with graphics or sounds having uppercase
