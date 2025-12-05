@@ -8,6 +8,8 @@ Pytch.
 vM.m.p (YYYY-MM-DD)
 -------------------
 
+* Handle project zipfiles with graphics or sounds having uppercase
+  filename extension.
 
 
 v3.5.1 (2025-11-27)
