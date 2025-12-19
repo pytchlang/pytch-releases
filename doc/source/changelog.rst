@@ -5,7 +5,7 @@ This page outlines what's changed as we've released new versions of
 Pytch.
 
 
-vM.m.p (YYYY-MM-DD)
+v3.5.3 (2025-12-19)
 -------------------
 
 * Improve navbar styling, including consistency between main app and
