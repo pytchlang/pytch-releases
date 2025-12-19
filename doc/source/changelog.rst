@@ -5,6 +5,13 @@ This page outlines what's changed as we've released new versions of
 Pytch.
 
 
+v3.5.3 (2025-12-19)
+-------------------
+
+* Improve navbar styling, including consistency between main app and
+  help pages.  (MN)
+
+
 v3.5.2 (2025-12-05)
 -------------------
 
