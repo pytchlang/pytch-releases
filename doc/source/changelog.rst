@@ -8,6 +8,8 @@ Pytch.
 vM.m.p (YYYY-MM-DD)
 -------------------
 
+* Improve navbar styling, including consistency between main app and
+  help pages.  (MN)
 
 
 v3.5.2 (2025-12-05)
