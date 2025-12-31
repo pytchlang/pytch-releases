@@ -9,6 +9,8 @@ vM.m.p (YYYY-MM-DD)
 -------------------
 
 * Update remaining script-by-script tutorials to use ``self.`` calls.
+* Allow creating a tutorial-following project at the start of any
+  chapter.
 
 
 v3.5.3 (2025-12-19)
