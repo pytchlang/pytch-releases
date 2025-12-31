@@ -5,6 +5,14 @@ This page outlines what's changed as we've released new versions of
 Pytch.
 
 
+v3.6.0 (2025-12-31)
+-------------------
+
+* Update remaining script-by-script tutorials to use ``self.`` calls.
+* Allow creating a tutorial-following project at the start of any
+  chapter.
+
+
 v3.5.3 (2025-12-19)
 -------------------
 
