@@ -5,7 +5,7 @@ This page outlines what's changed as we've released new versions of
 Pytch.
 
 
-vM.m.p (YYYY-MM-DD)
+v3.6.0 (2025-12-31)
 -------------------
 
 * Update remaining script-by-script tutorials to use ``self.`` calls.
