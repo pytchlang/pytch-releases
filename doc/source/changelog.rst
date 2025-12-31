@@ -8,6 +8,7 @@ Pytch.
 vM.m.p (YYYY-MM-DD)
 -------------------
 
+* Update remaining script-by-script tutorials to use ``self.`` calls.
 
 
 v3.5.3 (2025-12-19)
