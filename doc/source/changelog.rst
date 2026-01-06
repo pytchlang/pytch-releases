@@ -9,6 +9,7 @@ vM.m.p (YYYY-MM-DD)
 -------------------
 
 * Add some missing "global focus" shortcuts.
+* Make "Pytch" logo link in "start tutorial at chapter" page.
 
 
 v3.6.0 (2025-12-31)
