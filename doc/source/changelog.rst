@@ -8,6 +8,7 @@ Pytch.
 vM.m.p (YYYY-MM-DD)
 -------------------
 
+* Add some missing "global focus" shortcuts.
 
 
 v3.6.0 (2025-12-31)
