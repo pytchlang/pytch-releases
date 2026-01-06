@@ -5,6 +5,13 @@ This page outlines what's changed as we've released new versions of
 Pytch.
 
 
+v3.6.1 (2026-01-06)
+-------------------
+
+* Add some missing "global focus" shortcuts.
+* Make "Pytch" logo link in "start tutorial at chapter" page.
+
+
 v3.6.0 (2025-12-31)
 -------------------
 
