@@ -9,6 +9,7 @@ vM.m.p (YYYY-MM-DD)
 -------------------
 
 * Remove stale wording in *Shoot the Fruit* tutorial.
+* Update lesson specimens to ``self.`` from ``pytch.``.
 
 
 v3.6.1 (2026-01-06)
