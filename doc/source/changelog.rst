@@ -5,7 +5,7 @@ This page outlines what's changed as we've released new versions of
 Pytch.
 
 
-vM.m.p (YYYY-MM-DD)
+v3.6.2 (2026-01-30)
 -------------------
 
 * Remove stale wording in *Shoot the Fruit* tutorial.
