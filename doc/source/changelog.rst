@@ -5,6 +5,15 @@ This page outlines what's changed as we've released new versions of
 Pytch.
 
 
+v3.6.2 (2026-01-30)
+-------------------
+
+* Remove stale wording in *Shoot the Fruit* tutorial.
+* Update lesson specimens to ``self.`` from ``pytch.``.
+* Add challenges to *Boing* tutorial.  (Thanks to O'Connell School
+  student Jesse for the ideas.)
+
+
 v3.6.1 (2026-01-06)
 -------------------
 
