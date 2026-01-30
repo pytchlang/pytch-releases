@@ -10,6 +10,8 @@ vM.m.p (YYYY-MM-DD)
 
 * Remove stale wording in *Shoot the Fruit* tutorial.
 * Update lesson specimens to ``self.`` from ``pytch.``.
+* Add challenges to *Boing* tutorial.  (Thanks to O'Connell School
+  student Jesse for the ideas.)
 
 
 v3.6.1 (2026-01-06)
