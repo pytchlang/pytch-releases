@@ -9,6 +9,7 @@ vM.m.p (YYYY-MM-DD)
 -------------------
 
 * Allow ``JFIF`` files as graphic assets.
+* Move most English-language UI text to ``i18next``.
 
 
 v3.6.2 (2026-01-30)
