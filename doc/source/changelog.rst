@@ -8,6 +8,7 @@ Pytch.
 vM.m.p (YYYY-MM-DD)
 -------------------
 
+* Allow ``JFIF`` files as graphic assets.
 
 
 v3.6.2 (2026-01-30)
