@@ -5,6 +5,13 @@ This page outlines what's changed as we've released new versions of
 Pytch.
 
 
+v3.6.3 (2026-05-25)
+-------------------
+
+* Allow ``JFIF`` files as graphic assets.
+* Move most English-language UI text to ``i18next``.
+
+
 v3.6.2 (2026-01-30)
 -------------------
 
