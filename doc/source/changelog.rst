@@ -5,6 +5,12 @@ This page outlines what's changed as we've released new versions of
 Pytch.
 
 
+v3.6.4 (2026-05-26)
+-------------------
+
+* Improve style and structure of language-choice pane.
+
+
 v3.6.3 (2026-05-25)
 -------------------
 
