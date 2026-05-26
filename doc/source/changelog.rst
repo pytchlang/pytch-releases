@@ -8,6 +8,7 @@ Pytch.
 vM.m.p (YYYY-MM-DD)
 -------------------
 
+* Improve style and structure of language-choice pane.
 
 
 v3.6.3 (2026-05-25)
