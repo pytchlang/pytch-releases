@@ -5,7 +5,7 @@ This page outlines what's changed as we've released new versions of
 Pytch.
 
 
-vM.m.p (YYYY-MM-DD)
+v3.6.4 (2026-05-26)
 -------------------
 
 * Improve style and structure of language-choice pane.
