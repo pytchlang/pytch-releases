@@ -128,7 +128,7 @@ echo "Initialised submodules"
         PYTHON_KEYRING_BACKEND=keyring.backends.null.Keyring
         export PYTHON_KEYRING_BACKEND
 
-        poetry env use -q python3
+        poetry env use python3
         poetry install
     ) > "$REPO_ROOT"/pytch-build-preparation.out 2> "$REPO_ROOT"/pytch-build-preparation.err
 

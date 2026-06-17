@@ -5,6 +5,12 @@ This page outlines what's changed as we've released new versions of
 Pytch.
 
 
+v3.6.5 (2026-06-17)
+-------------------
+
+* Update to upstream ``Skulpt``; fix upstream bug; improve test speed.
+
+
 v3.6.4 (2026-05-26)
 -------------------
 
