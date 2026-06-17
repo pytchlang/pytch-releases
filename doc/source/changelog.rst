@@ -8,7 +8,7 @@ Pytch.
 vM.m.p (YYYY-MM-DD)
 -------------------
 
-* Update to upstream ``Skulpt``.
+* Update to upstream ``Skulpt``; fix upstream bug.
 
 
 v3.6.4 (2026-05-26)
