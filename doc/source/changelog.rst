@@ -8,6 +8,7 @@ Pytch.
 vM.m.p (YYYY-MM-DD)
 -------------------
 
+* Improve tools for writing tutorials.
 
 
 v3.6.5 (2026-06-17)
