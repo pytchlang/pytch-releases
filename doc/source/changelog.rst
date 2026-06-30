@@ -5,7 +5,7 @@ This page outlines what's changed as we've released new versions of
 Pytch.
 
 
-vM.m.p (YYYY-MM-DD)
+v3.7.0 (2026-06-30)
 -------------------
 
 * Improve tools for writing tutorials.
