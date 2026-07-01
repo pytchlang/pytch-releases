@@ -8,6 +8,7 @@ Pytch.
 vM.m.p (YYYY-MM-DD)
 -------------------
 
+* Update *Gardening* tutorial.
 
 
 v3.7.0 (2026-06-30)
