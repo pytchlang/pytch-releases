@@ -5,6 +5,12 @@ This page outlines what's changed as we've released new versions of
 Pytch.
 
 
+v3.7.1 (2026-07-01)
+-------------------
+
+* Update *Gardening* tutorial.
+
+
 v3.7.0 (2026-06-30)
 -------------------
 
