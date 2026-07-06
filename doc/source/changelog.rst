@@ -10,6 +10,7 @@ vM.m.p (YYYY-MM-DD)
 
 * Update internals of credits for assets used in tutorials.
 * Update "flat" *Blue Invader* tutorial to use new graphics.
+* Include asset credits in all tutorials.
 
 
 v3.7.1 (2026-07-01)
