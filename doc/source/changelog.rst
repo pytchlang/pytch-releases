@@ -5,6 +5,14 @@ This page outlines what's changed as we've released new versions of
 Pytch.
 
 
+v3.8.0 (2026-07-06)
+-------------------
+
+* Update internals of credits for assets used in tutorials.
+* Update "flat" *Blue Invader* tutorial to use new graphics.
+* Include asset credits in all tutorials.
+
+
 v3.7.1 (2026-07-01)
 -------------------
 
