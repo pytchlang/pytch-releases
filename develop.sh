@@ -197,6 +197,13 @@ echo "Initialised submodules"
         cd pytch-demo-catalogue-build-tool/build-tool
         poetry env use python3
         poetry install
+
+        # Spec for the demo catalogue served content lives in
+        # the pytch-webapp repo, but the build-tool tests here
+        # need access to it.
+        ln -s \
+           ../../../../../pytch-releases/pytch-webapp/disco-demos-openapi.yaml \
+           src/pytch_demo_catalogue_build_tool/data
     ) > "$REPO_ROOT"/pytch-demo-tools-preparation.out \
       2> "$REPO_ROOT"/pytch-demo-tools-preparation.err
 
