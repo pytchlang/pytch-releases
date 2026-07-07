@@ -5,6 +5,12 @@ This page outlines what's changed as we've released new versions of
 Pytch.
 
 
+v3.9.0 (2026-07-07)
+-------------------
+
+* Add "discoverable demos" feature and content.  (MN)
+
+
 v3.8.0 (2026-07-06)
 -------------------
 
