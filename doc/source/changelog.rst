@@ -8,6 +8,8 @@ Pytch.
 vM.m.p (YYYY-MM-DD)
 -------------------
 
+* Update developer documentation and set-up script in relation to demo
+  catalogue and tools.
 
 
 v3.9.0 (2026-07-07)
