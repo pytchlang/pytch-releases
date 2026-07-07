@@ -188,7 +188,8 @@ echo "Initialised submodules"
 
     echo "Preparing demo-catalogue tools ..."
 
-    # See comment above.
+    # See comment above.  Do this here because want it to
+    # apply to both child shells below.
     PYTHON_KEYRING_BACKEND=keyring.backends.null.Keyring
     export PYTHON_KEYRING_BACKEND
 
