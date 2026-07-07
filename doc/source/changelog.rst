@@ -8,6 +8,7 @@ Pytch.
 vM.m.p (YYYY-MM-DD)
 -------------------
 
+* Add "discoverable demos" feature and content.  (MN)
 
 
 v3.8.0 (2026-07-06)
