@@ -180,6 +180,28 @@ echo "Initialised submodules"
     echo "Prepared webapp"
 ) &
 
+(
+    if [ ! -L pytch-demo-catalogue-build-tool ]; then
+        echo "Skipping demo-catalogue tools; you will need to investigate"
+        exit
+    fi
+
+    echo "Preparing demo-catalogue tools ..."
+
+    # See comment above.
+    PYTHON_KEYRING_BACKEND=keyring.backends.null.Keyring
+    export PYTHON_KEYRING_BACKEND
+
+    (
+        cd pytch-demo-catalogue-build-tool/build-tool
+        poetry env use python3
+        poetry install
+    ) > "$REPO_ROOT"/pytch-demo-tools-preparation.out \
+      2> "$REPO_ROOT"/pytch-demo-tools-preparation.err
+
+    echo "Prepared demo-catalogue tools"
+) &
+
 wait
 
 echo
