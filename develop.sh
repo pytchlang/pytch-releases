@@ -45,6 +45,9 @@ if [ -e pytch-vm/src ] || [ -e pytch-webapp/src ]; then
     exit 1
 fi
 
+
+########################################################################
+
 echo "Initialising submodules ..."
 
 git submodule --quiet init
