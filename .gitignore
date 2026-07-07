@@ -6,5 +6,7 @@ pytch-vm-preparation.err
 pytch-vm-preparation.out
 pytch-webapp-preparation.err
 pytch-webapp-preparation.out
+pytch-demo-tools-preparation.out
+pytch-demo-tools-preparation.err
 pytch-demo-catalogue-content
 pytch-demo-catalogue-build-tool
