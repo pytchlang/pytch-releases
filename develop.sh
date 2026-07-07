@@ -136,7 +136,8 @@ echo "Initialised submodules"
         npm install
         npm run devbuild
         ( cd dist; ln -s skulpt.js skulpt.min.js )
-    ) > "$REPO_ROOT"/pytch-vm-preparation.out 2> "$REPO_ROOT"/pytch-vm-preparation.err
+    ) > "$REPO_ROOT"/pytch-vm-preparation.out \
+      2> "$REPO_ROOT"/pytch-vm-preparation.err
 
     echo "Prepared VM"
 ) &
@@ -154,7 +155,8 @@ echo "Initialised submodules"
 
         poetry env use python3
         poetry install
-    ) > "$REPO_ROOT"/pytch-build-preparation.out 2> "$REPO_ROOT"/pytch-build-preparation.err
+    ) > "$REPO_ROOT"/pytch-build-preparation.out \
+      2> "$REPO_ROOT"/pytch-build-preparation.err
 
     echo "Prepared build tools"
 ) &
@@ -172,7 +174,8 @@ echo "Initialised submodules"
             echo "Creating src/.env appropriate to local development"
             cp src/dot-env-local-development src/.env
         fi
-    ) > "$REPO_ROOT"/pytch-webapp-preparation.out 2> "$REPO_ROOT"/pytch-webapp-preparation.err
+    ) > "$REPO_ROOT"/pytch-webapp-preparation.out \
+      2> "$REPO_ROOT"/pytch-webapp-preparation.err
 
     echo "Prepared webapp"
 ) &
