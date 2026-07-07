@@ -48,6 +48,27 @@ fi
 
 ########################################################################
 
+echo "Setting up links to demo catalogue repos ..."
+
+for linkname in \
+        pytch-demo-catalogue-content \
+        pytch-demo-catalogue-build-tool; do
+    if [ -L "$linkname" ]; then
+        echo "Skipping existing $linkname"
+    else
+        if [ ! -d ../"$linkname" ]; then
+            echo "  Suspicious: No sibling directory $linkname found."
+            echo "  You will have to set this up manually."
+        else
+            ln -s ../"$linkname" .
+            echo "  Linked $linkname"
+        fi
+    fi
+done
+
+
+########################################################################
+
 echo "Initialising submodules ..."
 
 git submodule --quiet init
