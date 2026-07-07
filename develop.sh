@@ -200,6 +200,16 @@ echo "Initialised submodules"
       2> "$REPO_ROOT"/pytch-demo-tools-preparation.err
 
     echo "Prepared demo-catalogue tools"
+
+    echo "Creating webapp fixtures for demo catalogue ..."
+
+    (
+        cd pytch-webapp
+        ./scripts/refresh-demos-fixtures.sh
+    ) >> "$REPO_ROOT"/pytch-demo-tools-preparation.out \
+      2>> "$REPO_ROOT"/pytch-demo-tools-preparation.err
+
+    echo "Created webapp fixtures for demo catalogue"
 ) &
 
 wait
