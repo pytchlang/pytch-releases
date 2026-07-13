@@ -5,8 +5,8 @@ This page outlines what's changed as we've released new versions of
 Pytch.
 
 
-vM.m.p (YYYY-MM-DD)
--------------------
+v3.10.0 (2026-07-13)
+--------------------
 
 * Update developer documentation and set-up script in relation to demo
   catalogue and tools.
