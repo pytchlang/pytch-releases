@@ -45,6 +45,30 @@ if [ -e pytch-vm/src ] || [ -e pytch-webapp/src ]; then
     exit 1
 fi
 
+
+########################################################################
+
+echo "Setting up links to demo catalogue repos ..."
+
+for linkname in \
+        pytch-demo-catalogue-content \
+        pytch-demo-catalogue-build-tool; do
+    if [ -L "$linkname" ]; then
+        echo "Skipping existing $linkname"
+    else
+        if [ ! -d ../"$linkname" ]; then
+            echo "  Suspicious: No sibling directory $linkname found."
+            echo "  You will have to set this up manually."
+        else
+            ln -s ../"$linkname" .
+            echo "  Linked $linkname"
+        fi
+    fi
+done
+
+
+########################################################################
+
 echo "Initialising submodules ..."
 
 git submodule --quiet init
@@ -112,7 +136,8 @@ echo "Initialised submodules"
         npm install
         npm run devbuild
         ( cd dist; ln -s skulpt.js skulpt.min.js )
-    ) > "$REPO_ROOT"/pytch-vm-preparation.out 2> "$REPO_ROOT"/pytch-vm-preparation.err
+    ) > "$REPO_ROOT"/pytch-vm-preparation.out \
+      2> "$REPO_ROOT"/pytch-vm-preparation.err
 
     echo "Prepared VM"
 ) &
@@ -130,7 +155,8 @@ echo "Initialised submodules"
 
         poetry env use python3
         poetry install
-    ) > "$REPO_ROOT"/pytch-build-preparation.out 2> "$REPO_ROOT"/pytch-build-preparation.err
+    ) > "$REPO_ROOT"/pytch-build-preparation.out \
+      2> "$REPO_ROOT"/pytch-build-preparation.err
 
     echo "Prepared build tools"
 ) &
@@ -148,9 +174,50 @@ echo "Initialised submodules"
             echo "Creating src/.env appropriate to local development"
             cp src/dot-env-local-development src/.env
         fi
-    ) > "$REPO_ROOT"/pytch-webapp-preparation.out 2> "$REPO_ROOT"/pytch-webapp-preparation.err
+    ) > "$REPO_ROOT"/pytch-webapp-preparation.out \
+      2> "$REPO_ROOT"/pytch-webapp-preparation.err
 
     echo "Prepared webapp"
+) &
+
+(
+    if [ ! -L pytch-demo-catalogue-build-tool ]; then
+        echo "Skipping demo-catalogue tools; you will need to investigate"
+        exit
+    fi
+
+    echo "Preparing demo-catalogue tools ..."
+
+    # See comment above.  Do this here because want it to
+    # apply to both child shells below.
+    PYTHON_KEYRING_BACKEND=keyring.backends.null.Keyring
+    export PYTHON_KEYRING_BACKEND
+
+    (
+        cd pytch-demo-catalogue-build-tool/build-tool
+        poetry env use python3
+        poetry install
+
+        # Spec for the demo catalogue served content lives in
+        # the pytch-webapp repo, but the build-tool tests here
+        # need access to it.
+        ln -s \
+           ../../../../../pytch-releases/pytch-webapp/disco-demos-openapi.yaml \
+           src/pytch_demo_catalogue_build_tool/data
+    ) > "$REPO_ROOT"/pytch-demo-tools-preparation.out \
+      2> "$REPO_ROOT"/pytch-demo-tools-preparation.err
+
+    echo "Prepared demo-catalogue tools"
+
+    echo "Creating webapp fixtures for demo catalogue ..."
+
+    (
+        cd pytch-webapp
+        ./scripts/refresh-demos-fixtures.sh
+    ) >> "$REPO_ROOT"/pytch-demo-tools-preparation.out \
+      2>> "$REPO_ROOT"/pytch-demo-tools-preparation.err
+
+    echo "Created webapp fixtures for demo catalogue"
 ) &
 
 wait

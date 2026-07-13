@@ -5,6 +5,18 @@ This page outlines what's changed as we've released new versions of
 Pytch.
 
 
+v3.10.0 (2026-07-13)
+--------------------
+
+* Update developer documentation and set-up script in relation to demo
+  catalogue and tools.
+* Allow assignment to various properties, e.g., ``Sprite.x_position``;
+  allow read-only access to "the original" property via its class.
+* Update both "flat" and "script-by-script" versions of *Boing*
+  tutorial to avoid ``the_original()``.  Update *Gardening* with asset
+  credits and licence info.
+
+
 v3.9.0 (2026-07-07)
 -------------------
 
