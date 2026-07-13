@@ -12,6 +12,9 @@ vM.m.p (YYYY-MM-DD)
   catalogue and tools.
 * Allow assignment to various properties, e.g., ``Sprite.x_position``;
   allow read-only access to "the original" property via its class.
+* Update both "flat" and "script-by-script" versions of *Boing*
+  tutorial to avoid ``the_original()``.  Update *Gardening* with asset
+  credits and licence info.
 
 
 v3.9.0 (2026-07-07)
