@@ -10,6 +10,8 @@ vM.m.p (YYYY-MM-DD)
 
 * Update developer documentation and set-up script in relation to demo
   catalogue and tools.
+* Allow assignment to various properties, e.g., ``Sprite.x_position``;
+  allow read-only access to "the original" property via its class.
 
 
 v3.9.0 (2026-07-07)
