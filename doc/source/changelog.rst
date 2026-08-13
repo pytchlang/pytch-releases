@@ -5,7 +5,7 @@ This page outlines what's changed as we've released new versions of
 Pytch.
 
 
-vM.mm.p (YYYY-MM-DD)
+v3.11.0 (2026-08-13)
 --------------------
 
 * Allow images in demo descriptions.
