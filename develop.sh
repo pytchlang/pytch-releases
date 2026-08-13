@@ -202,7 +202,7 @@ echo "Initialised submodules"
         # the pytch-webapp repo, but the build-tool tests here
         # need access to it.
         ln -s \
-           ../../../../../pytch-releases/pytch-webapp/disco-demos-openapi.yaml \
+           ../../../../../pytch-releases/pytch-webapp/tools/disco-demos-openapi.yaml \
            src/pytch_demo_catalogue_build_tool/data
     ) > "$REPO_ROOT"/pytch-demo-tools-preparation.out \
       2> "$REPO_ROOT"/pytch-demo-tools-preparation.err
