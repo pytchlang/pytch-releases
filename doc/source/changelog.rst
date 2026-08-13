@@ -5,6 +5,12 @@ This page outlines what's changed as we've released new versions of
 Pytch.
 
 
+v3.11.0 (2026-08-13)
+--------------------
+
+* Allow images in demo descriptions.
+
+
 v3.10.0 (2026-07-13)
 --------------------
 
