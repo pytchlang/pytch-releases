@@ -8,6 +8,7 @@ Pytch.
 vM.mm.p (YYYY-MM-DD)
 --------------------
 
+* Allow images in demo descriptions.
 
 
 v3.10.0 (2026-07-13)
