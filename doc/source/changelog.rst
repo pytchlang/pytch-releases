@@ -8,6 +8,7 @@ Pytch.
 vM.mm.p (YYYY-MM-DD)
 --------------------
 
+* Add translation to Irish for main IDE.
 
 
 v3.11.0 (2026-08-13)
