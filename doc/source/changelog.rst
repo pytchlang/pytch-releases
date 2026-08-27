@@ -5,6 +5,12 @@ This page outlines what's changed as we've released new versions of
 Pytch.
 
 
+v4.0.0 (2026-08-27)
+-------------------
+
+* Add translation to Irish for main IDE.
+
+
 v3.11.0 (2026-08-13)
 --------------------
 
