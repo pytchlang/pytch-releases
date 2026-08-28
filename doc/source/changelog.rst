@@ -8,6 +8,7 @@ Pytch.
 vM.m.p (YYYY-MM-DD)
 -------------------
 
+* Add language-chooser to navbar.
 
 
 v4.0.0 (2026-08-27)
