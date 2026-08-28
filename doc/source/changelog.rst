@@ -5,6 +5,12 @@ This page outlines what's changed as we've released new versions of
 Pytch.
 
 
+v4.0.1 (2026-08-28)
+-------------------
+
+* Add language-chooser to navbar.
+
+
 v4.0.0 (2026-08-27)
 -------------------
 
