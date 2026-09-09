@@ -8,6 +8,7 @@ Pytch.
 vM.m.p (YYYY-MM-DD)
 -------------------
 
+* Update to latest upstream Skulpt.
 
 
 v4.0.1 (2026-08-28)
