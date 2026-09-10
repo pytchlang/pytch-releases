@@ -5,6 +5,12 @@ This page outlines what's changed as we've released new versions of
 Pytch.
 
 
+v4.2.1 (2026-09-10)
+-------------------
+
+* Make all anchors in demo descriptions open in new tab.
+
+
 v4.2.0 (2026-09-10)
 -------------------
 
