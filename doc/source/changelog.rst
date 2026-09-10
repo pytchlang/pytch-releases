@@ -8,6 +8,7 @@ Pytch.
 vM.m.p (YYYY-MM-DD)
 -------------------
 
+* Make all anchors in demo descriptions open in new tab.
 
 
 v4.2.0 (2026-09-10)
