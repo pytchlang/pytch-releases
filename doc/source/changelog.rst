@@ -10,6 +10,7 @@ vM.m.p (YYYY-MM-DD)
 
 * Update to latest upstream Skulpt.
 * Use POEditor-managed data files as source of truth for i18n.  (MN)
+* Add Irish translations of Scratch blocks.  (MN)
 
 
 v4.0.1 (2026-08-28)
