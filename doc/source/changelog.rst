@@ -5,7 +5,7 @@ This page outlines what's changed as we've released new versions of
 Pytch.
 
 
-vM.m.p (YYYY-MM-DD)
+v4.2.0 (2026-09-10)
 -------------------
 
 * Support local anchor elements in demo descriptions.
