@@ -5,6 +5,14 @@ This page outlines what's changed as we've released new versions of
 Pytch.
 
 
+v4.1.0 (2026-09-10)
+-------------------
+
+* Update to latest upstream Skulpt.
+* Use POEditor-managed data files as source of truth for i18n.  (MN)
+* Add Irish translations of Scratch blocks.  (MN)
+
+
 v4.0.1 (2026-08-28)
 -------------------
 
