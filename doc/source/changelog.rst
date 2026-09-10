@@ -8,6 +8,7 @@ Pytch.
 vM.m.p (YYYY-MM-DD)
 -------------------
 
+* Support local anchor elements in demo descriptions.
 
 
 v4.1.0 (2026-09-10)
