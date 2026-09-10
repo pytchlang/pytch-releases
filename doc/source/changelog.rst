@@ -5,7 +5,7 @@ This page outlines what's changed as we've released new versions of
 Pytch.
 
 
-vM.m.p (YYYY-MM-DD)
+v4.1.0 (2026-09-10)
 -------------------
 
 * Update to latest upstream Skulpt.
