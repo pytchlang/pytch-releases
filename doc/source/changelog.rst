@@ -5,7 +5,7 @@ This page outlines what's changed as we've released new versions of
 Pytch.
 
 
-vM.m.p (YYYY-MM-DD)
+v4.2.1 (2026-09-10)
 -------------------
 
 * Make all anchors in demo descriptions open in new tab.
