@@ -5,6 +5,16 @@ This page outlines what's changed as we've released new versions of
 Pytch.
 
 
+v4.3.0 (2026-10-04)
+-------------------
+
+* Improve accessibility.
+* Update translations.
+* Add German language.  (MN)
+* Add ``Sprite.point_towards()``, ``Sprite.go_to()``, and
+  ``Sprite.move_steps()`` methods.
+
+
 v4.2.1 (2026-09-10)
 -------------------
 
