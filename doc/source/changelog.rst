@@ -10,6 +10,7 @@ vM.m.p (YYYY-MM-DD)
 
 * Improve accessibility.
 * Update translations.
+* Add German language.  (MN)
 
 
 v4.2.1 (2026-09-10)
