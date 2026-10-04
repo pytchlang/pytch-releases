@@ -8,6 +8,7 @@ Pytch.
 vM.m.p (YYYY-MM-DD)
 -------------------
 
+* Improve accessibility.
 
 
 v4.2.1 (2026-09-10)
