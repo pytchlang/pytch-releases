@@ -9,6 +9,7 @@ vM.m.p (YYYY-MM-DD)
 -------------------
 
 * Improve accessibility.
+* Update translations.
 
 
 v4.2.1 (2026-09-10)
