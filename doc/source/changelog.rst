@@ -11,7 +11,8 @@ vM.m.p (YYYY-MM-DD)
 * Improve accessibility.
 * Update translations.
 * Add German language.  (MN)
-* Add ``Sprite.point_towards()`` and ``Sprite.move_steps()`` methods.
+* Add ``Sprite.point_towards()``, ``Sprite.go_to()``, and
+  ``Sprite.move_steps()`` methods.
 
 
 v4.2.1 (2026-09-10)
