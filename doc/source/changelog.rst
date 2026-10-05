@@ -8,6 +8,8 @@ Pytch.
 vM.m.p (YYYY-MM-DD)
 -------------------
 
+* Fix minor typos, punctuation, and formatting in English help sidebar
+  text.
 
 
 v4.3.0 (2026-10-04)
