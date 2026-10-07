@@ -5,6 +5,13 @@ This page outlines what's changed as we've released new versions of
 Pytch.
 
 
+v4.3.2 (2026-10-07)
+-------------------
+
+* Update translation tooling.
+* Update German translations.  (MN)
+
+
 v4.3.1 (2026-10-05)
 -------------------
 
