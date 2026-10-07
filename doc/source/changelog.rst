@@ -8,6 +8,8 @@ Pytch.
 vM.m.p (YYYY-MM-DD)
 -------------------
 
+* Update translation tooling.
+* Update German translations.  (MN)
 
 
 v4.3.1 (2026-10-05)
