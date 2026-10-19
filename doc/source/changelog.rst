@@ -5,7 +5,7 @@ This page outlines what's changed as we've released new versions of
 Pytch.
 
 
-vM.m.p (YYYY-MM-DD)
+v4.4.0 (2026-10-19)
 -------------------
 
 * Support demos in multiple languages.
