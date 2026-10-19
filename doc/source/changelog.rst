@@ -8,6 +8,7 @@ Pytch.
 vM.m.p (YYYY-MM-DD)
 -------------------
 
+* Support demos in multiple languages.
 
 
 v4.3.2 (2026-10-07)
