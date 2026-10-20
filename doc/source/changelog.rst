@@ -5,6 +5,12 @@ This page outlines what's changed as we've released new versions of
 Pytch.
 
 
+v4.4.1 (2026-10-20)
+-------------------
+
+* Ensure app uses up-to-date translation files.
+
+
 v4.4.0 (2026-10-19)
 -------------------
 
