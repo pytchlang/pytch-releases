@@ -8,6 +8,7 @@ Pytch.
 vM.m.p (YYYY-MM-DD)
 -------------------
 
+* Ensure app uses up-to-date translation files.
 
 
 v4.4.0 (2026-10-19)
