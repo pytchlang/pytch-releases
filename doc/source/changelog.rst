@@ -5,7 +5,7 @@ This page outlines what's changed as we've released new versions of
 Pytch.
 
 
-vM.m.p (YYYY-MM-DD)
+v4.5.0 (2026-10-29)
 -------------------
 
 * Improve behaviour under screen-reader.
