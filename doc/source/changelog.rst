@@ -5,6 +5,13 @@ This page outlines what's changed as we've released new versions of
 Pytch.
 
 
+v4.5.0 (2026-10-29)
+-------------------
+
+* Improve behaviour under screen-reader.
+* Update German and Irish translations.
+
+
 v4.4.1 (2026-10-20)
 -------------------
 
@@ -15,7 +22,7 @@ v4.4.0 (2026-10-19)
 -------------------
 
 * Support demos in multiple languages.
-* Update German translation.  (MN)
+* Update German translations.  (MN)
 
 
 v4.3.2 (2026-10-07)
