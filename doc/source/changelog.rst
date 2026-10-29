@@ -8,6 +8,7 @@ Pytch.
 vM.m.p (YYYY-MM-DD)
 -------------------
 
+* Improve behaviour under screen-reader.
 
 
 v4.4.1 (2026-10-20)
