@@ -22,7 +22,7 @@ v4.4.0 (2026-10-19)
 -------------------
 
 * Support demos in multiple languages.
-* Update German translation.  (MN)
+* Update German translations.  (MN)
 
 
 v4.3.2 (2026-10-07)
