@@ -8,6 +8,8 @@ Pytch.
 vM.m.p (YYYY-MM-DD)
 -------------------
 
+* Improve behaviour under screen-reader and when using keyboard
+  navigation.
 
 
 v4.5.0 (2026-10-29)
