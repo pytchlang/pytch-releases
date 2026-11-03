@@ -5,6 +5,13 @@ This page outlines what's changed as we've released new versions of
 Pytch.
 
 
+v4.5.1 (2026-11-03)
+-------------------
+
+* Improve behaviour under screen-reader and when using keyboard
+  navigation.
+
+
 v4.5.0 (2026-10-29)
 -------------------
 
