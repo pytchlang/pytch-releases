@@ -5,6 +5,17 @@ This page outlines what's changed as we've released new versions of
 Pytch.
 
 
+v4.6.0 (2026-11-17)
+-------------------
+
+* Support tutorials in multiple languages.
+* Add Irish-language versions of *Shoot the Fruit* and *Blue Invader*
+  tutorials.  Many thanks to `COGG <https://cogg.ie/>`_ for supplying
+  these.
+* Make links within tutorial content open in new tab.
+* Update "de" and "ga" translations.
+
+
 v4.5.1 (2026-11-03)
 -------------------
 
