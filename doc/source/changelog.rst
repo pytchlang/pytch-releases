@@ -12,6 +12,7 @@ vM.m.p (YYYY-MM-DD)
 * Add Irish-language version of *Shoot the Fruit* tutorial.  Many
   thanks to `COGG <https://cogg.ie/>`_ for supplying this.
 * Make links within tutorial content open in new tab.
+* Update "de" and "ga" translations.
 
 
 v4.5.1 (2026-11-03)
