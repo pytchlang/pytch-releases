@@ -9,8 +9,9 @@ vM.m.p (YYYY-MM-DD)
 -------------------
 
 * Support tutorials in multiple languages.
-* Add Irish-language version of *Shoot the Fruit* tutorial.  Many
-  thanks to `COGG <https://cogg.ie/>`_ for supplying this.
+* Add Irish-language versions of *Shoot the Fruit* and *Blue Invader*
+  tutorials.  Many thanks to `COGG <https://cogg.ie/>`_ for supplying
+  these.
 * Make links within tutorial content open in new tab.
 * Update "de" and "ga" translations.
 
