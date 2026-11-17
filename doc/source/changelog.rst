@@ -11,6 +11,7 @@ vM.m.p (YYYY-MM-DD)
 * Support tutorials in multiple languages.
 * Add Irish-language version of *Shoot the Fruit* tutorial.  Many
   thanks to `COGG <https://cogg.ie/>`_ for supplying this.
+* Make links within tutorial content open in new tab.
 
 
 v4.5.1 (2026-11-03)
