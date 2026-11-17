@@ -8,6 +8,8 @@ Pytch.
 vM.m.p (YYYY-MM-DD)
 -------------------
 
+* Add Irish-language version of *Shoot the Fruit* tutorial.  Many
+  thanks to `COGG <https://cogg.ie/>`_ for supplying this.
 
 
 v4.5.1 (2026-11-03)
