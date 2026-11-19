@@ -8,6 +8,7 @@ Pytch.
 vM.m.p (YYYY-MM-DD)
 -------------------
 
+* Scale variable watchers and speech bubbles with stage size.
 
 
 v4.6.0 (2026-11-17)
