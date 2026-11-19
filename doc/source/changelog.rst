@@ -5,6 +5,12 @@ This page outlines what's changed as we've released new versions of
 Pytch.
 
 
+v4.6.1 (2026-11-19)
+-------------------
+
+* Scale variable watchers and speech bubbles with stage size.
+
+
 v4.6.0 (2026-11-17)
 -------------------
 
